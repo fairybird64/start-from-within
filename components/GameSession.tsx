@@ -8,12 +8,12 @@ import CardDisplay from './CardDisplay';
 import PlayerInput from './PlayerInput';
 import SupportZone from './SupportZone';
 
-const COPING_STANCES: { id: CopingStance; label_th: string; label_en: string; emoji: string }[] = [
-  { id: 'placating', label_th: 'ยอมตาม', label_en: 'Placating', emoji: '🙏' },
-  { id: 'blaming', label_th: 'โทษผู้อื่น', label_en: 'Blaming', emoji: '👉' },
-  { id: 'super_reasonable', label_th: 'มีเหตุผลเกินไป', label_en: 'Super-Reasonable', emoji: '🧠' },
-  { id: 'irrelevant', label_th: 'เบี่ยงเบน', label_en: 'Irrelevant', emoji: '🌀' },
-  { id: 'congruent', label_th: 'สอดคล้องกับตัวเอง', label_en: 'Congruent', emoji: '💚' },
+const COPING_STANCES: { id: CopingStance; label_th: string; label_en: string; emoji: string; desc_th: string }[] = [
+  { id: 'placating', label_th: 'ยอมตาม', label_en: 'Placating', emoji: '🙏', desc_th: 'เอาใจคนอื่น ลืมความต้องการของตัวเอง' },
+  { id: 'blaming', label_th: 'โทษผู้อื่น', label_en: 'Blaming', emoji: '👉', desc_th: 'ปกป้องตัวเองด้วยการโทษคนอื่น' },
+  { id: 'super_reasonable', label_th: 'มีเหตุผลเกินไป', label_en: 'Super-Reasonable', emoji: '🧠', desc_th: 'ใช้เหตุผลปิดกั้นความรู้สึก' },
+  { id: 'irrelevant', label_th: 'เมิงเนิน', label_en: 'Irrelevant', emoji: '🌀', desc_th: 'เบี่ยงเรื่อง หนีจากสถานการณ์' },
+  { id: 'congruent', label_th: 'สอดคล้องกับตัวเอง', label_en: 'Congruent', emoji: '💚', desc_th: 'เป้าหมายของการเดินทาง — ตรงและเปิดใจ' },
 ];
 
 const LAYER_LABELS: Record<IcebergLayer, string> = {
@@ -296,7 +296,10 @@ export default function GameSession() {
         {/* ── COPING STANCE SELECTION ── */}
         {state.phase === 'situation' && !state.currentCard && (
           <PhaseCard title="ท่าทางการรับมือ" subtitle="Coping Stance">
-            <p className="text-sm text-stone-500 text-center">คุณรับมือกับสถานการณ์นี้ด้วยท่าทางใด?</p>
+            <div className="text-center flex flex-col gap-1">
+              <p className="text-base text-stone-700">เมื่อเผชิญกับสถานการณ์นี้ คุณมักตอบสนองแบบไหน?</p>
+              <p className="text-xs text-stone-400">ท่าทีการรับมือของ Satir Model — ไม่มีผิดถูก แค่สังเกตตัวเอง</p>
+            </div>
             <div className="flex flex-col gap-2">
               {COPING_STANCES.map((s) => (
                 <button
@@ -306,8 +309,8 @@ export default function GameSession() {
                 >
                   <span className="text-xl">{s.emoji}</span>
                   <div>
-                    <div className="text-sm font-medium text-stone-700">{s.label_th}</div>
-                    <div className="text-xs text-stone-400">{s.label_en}</div>
+                    <div className="text-sm font-medium text-stone-700">{s.label_th} <span className="font-normal text-stone-400">({s.label_en})</span></div>
+                    <div className="text-xs text-stone-500 mt-0.5">{s.desc_th}</div>
                   </div>
                 </button>
               ))}
