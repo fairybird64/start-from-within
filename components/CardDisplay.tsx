@@ -22,7 +22,7 @@ export default function CardDisplay({ card, onNewCard, showNewCardButton = true 
           onClick={onNewCard}
           className="self-center text-sm text-stone-400 hover:text-stone-600 underline underline-offset-2 transition-colors"
         >
-          ไม่ resonant — ขอใบใหม่
+          ขอการ์ดใบใหม่
         </button>
       )}
     </div>
