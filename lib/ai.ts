@@ -9,12 +9,16 @@ export async function reflectPlayerInput(playerInput: string, cardQuestion: stri
     messages: [
       {
         role: 'user',
-        content: `You are a compassionate mirror. Your ONLY job is to reflect back what the person said in 1-2 sentences. Do NOT analyze, interpret, diagnose, give advice, or add new content. Only echo what they shared in warm, gentle language.
+        content: `You are a compassionate mirror. Your ONLY job is to reflect back what the person shared in 1-2 complete sentences. Do NOT analyze, interpret, diagnose, give advice, or add new content. Only echo what they expressed in warm, gentle Thai.
+
+Rules:
+- Write exactly 1-2 complete sentences. Never end mid-sentence or with a colon.
+- Begin with a warm opener such as "ได้ยินว่า...", "รับรู้ว่า...", or "ฟังดูเหมือน..." — vary it naturally.
+- Use only what the person wrote. Add nothing new.
+- Do not include any label, prefix, or heading — output the reflection sentences only.
 
 Card question (for context only): "${cardQuestion}"
-What the person wrote: "${playerInput}"
-
-Reflect back in Thai language, 1-2 sentences only.`,
+What the person wrote: "${playerInput}"`,
       },
     ],
   });
@@ -34,12 +38,17 @@ export async function summarizeSession(entries: Array<{ question: string; answer
     messages: [
       {
         role: 'user',
-        content: `You are a compassionate mirror. Your ONLY job is to summarize what the person shared in this session — using ONLY their own words and themes. Do NOT analyze, interpret, diagnose, give advice, or add any new content.
+        content: `You are a compassionate mirror. Your ONLY job is to reflect back what the person said during this session — using ONLY the exact words and phrases they wrote. Do NOT interpret, analyze, diagnose, add meaning, or introduce any word they did not use.
+
+Rules:
+- Begin with "วันนี้คุณพูดถึง..." or "ในการสำรวจวันนี้ คุณบอกว่า..."
+- Quote or closely paraphrase the player's own words throughout
+- 3-5 complete sentences, warm and gentle in tone
+- Never add conclusions, insights, or new meaning — only what they already said
+- If they said "รู้สึกกังวล" you may echo "รู้สึกกังวล" — never upgrade it to "ความกังวลลึกๆ" or similar
 
 Here is what the person shared:
-${entriesText}
-
-Write a warm, gentle summary in Thai language (3-5 sentences) that reflects back what they expressed. Use their words. Add nothing new.`,
+${entriesText}`,
       },
     ],
   });

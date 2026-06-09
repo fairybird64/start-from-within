@@ -186,8 +186,7 @@ export default function GameSession() {
   }
 
   function handleStop() {
-    setState((prev) => ({ ...prev, phase: 'check_out', currentCard: null }));
-    setCheckOutCard(getRandomCard('check_out'));
+    goToReflect();
   }
 
   function handleNewSupportCard() {
@@ -348,15 +347,6 @@ export default function GameSession() {
               </div>
             )}
 
-            {!state.currentCard && !state.currentLayer && state.stars.length > 0 && (
-              <button
-                onClick={goToReflect}
-                className="self-center mt-4 px-6 py-3 rounded-full bg-stone-700 hover:bg-stone-800 text-white text-sm font-medium transition-colors"
-              >
-                พร้อมสะท้อนกลับ →
-              </button>
-            )}
-
             {/* Support zone — pinned at bottom, small & unobtrusive */}
             <div className="mt-6 pt-4 border-t border-stone-100">
               <SupportZone
@@ -459,7 +449,6 @@ function PhaseCard({ title, subtitle, children }: { title: string; subtitle: str
 function ReflectionBubble({ text }: { text: string }) {
   return (
     <div className="bg-blue-50 border border-blue-100 rounded-2xl px-5 py-4">
-      <p className="text-xs text-blue-400 uppercase tracking-wider mb-1">กระจกสะท้อน</p>
       <p className="text-sm text-stone-600 leading-relaxed italic">{text}</p>
     </div>
   );
