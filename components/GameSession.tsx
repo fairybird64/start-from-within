@@ -128,6 +128,12 @@ export default function GameSession() {
 
   // ── EXPLORE ──
   function handleLayerSelect(layer: IcebergLayer) {
+    // Tapping the active layer while reflection is showing places a star
+    if (layer === state.currentLayer && aiReflection) {
+      handlePlaceStar();
+      return;
+    }
+    setAiReflection('');
     const card = getRandomCardForLayer(layer, Array.from(state.usedCardIds));
     setState((prev) => ({
       ...prev,
@@ -330,18 +336,10 @@ export default function GameSession() {
                 {aiReflection && (
                   <div className="flex flex-col gap-3">
                     <ReflectionBubble text={aiReflection} />
-                    <button
-                      onClick={handlePlaceStar}
-                      className="self-center px-5 py-2 rounded-full bg-amber-400 hover:bg-amber-500 text-white text-sm font-medium transition-colors shadow-sm"
-                    >
-                      ⭐ วางดาวที่ชั้นนี้ — ฉันเข้าใจแล้ว
-                    </button>
-                    <button
-                      onClick={() => setAiReflection('')}
-                      className="self-center text-xs text-stone-400 hover:text-stone-600 underline"
-                    >
-                      ยังไม่พร้อมวางดาว — สำรวจต่อ
-                    </button>
+                    <p className="text-xs text-center text-stone-400">
+                      กดชั้นนี้อีกครั้งบนแผนที่เพื่อวางดาว หรือเขียนต่อด้านล่าง
+                    </p>
+                    <PlayerInput onSubmit={handleExploreSubmit} loading={loading} placeholder="เขียนต่อ หรือเลือกชั้นอื่นบนแผนที่..." />
                   </div>
                 )}
               </div>
