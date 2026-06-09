@@ -15,6 +15,15 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      keyframes: {
+        'pulse-subtle': {
+          '0%, 100%': { opacity: '1' },
+          '50%': { opacity: '0.7' },
+        },
+      },
+      animation: {
+        'pulse-subtle': 'pulse-subtle 2.5s ease-in-out infinite',
+      },
     },
   },
   plugins: [],
