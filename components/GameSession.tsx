@@ -459,7 +459,6 @@ function PhaseCard({ title, subtitle, children }: { title: string; subtitle: str
 function ReflectionBubble({ text }: { text: string }) {
   return (
     <div className="bg-blue-50 border border-blue-100 rounded-2xl px-5 py-4">
-      <p className="text-xs text-blue-400 uppercase tracking-wider mb-1">กระจกสะท้อน</p>
       <p className="text-sm text-stone-600 leading-relaxed italic">{text}</p>
     </div>
   );

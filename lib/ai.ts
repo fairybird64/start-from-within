@@ -9,12 +9,16 @@ export async function reflectPlayerInput(playerInput: string, cardQuestion: stri
     messages: [
       {
         role: 'user',
-        content: `You are a compassionate mirror. Your ONLY job is to reflect back what the person said in 1-2 sentences. Do NOT analyze, interpret, diagnose, give advice, or add new content. Only echo what they shared in warm, gentle language.
+        content: `You are a compassionate mirror. Your ONLY job is to reflect back what the person shared in 1-2 complete sentences. Do NOT analyze, interpret, diagnose, give advice, or add new content. Only echo what they expressed in warm, gentle Thai.
+
+Rules:
+- Write exactly 1-2 complete sentences. Never end mid-sentence or with a colon.
+- Begin with a warm opener such as "ได้ยินว่า...", "รับรู้ว่า...", or "ฟังดูเหมือน..." — vary it naturally.
+- Use only what the person wrote. Add nothing new.
+- Do not include any label, prefix, or heading — output the reflection sentences only.
 
 Card question (for context only): "${cardQuestion}"
-What the person wrote: "${playerInput}"
-
-Reflect back in Thai language, 1-2 sentences only.`,
+What the person wrote: "${playerInput}"`,
       },
     ],
   });
