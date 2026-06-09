@@ -12,7 +12,7 @@ const COPING_STANCES: { id: CopingStance; label_th: string; label_en: string; em
   { id: 'placating', label_th: 'ยอมตาม', label_en: 'Placating', emoji: '🙏', desc_th: 'เอาใจคนอื่น ลืมความต้องการของตัวเอง' },
   { id: 'blaming', label_th: 'โทษผู้อื่น', label_en: 'Blaming', emoji: '👉', desc_th: 'ปกป้องตัวเองด้วยการโทษคนอื่น' },
   { id: 'super_reasonable', label_th: 'มีเหตุผลเกินไป', label_en: 'Super-Reasonable', emoji: '🧠', desc_th: 'ใช้เหตุผลปิดกั้นความรู้สึก' },
-  { id: 'irrelevant', label_th: 'เมิงเนิน', label_en: 'Irrelevant', emoji: '🌀', desc_th: 'เบี่ยงเรื่อง หนีจากสถานการณ์' },
+  { id: 'irrelevant', label_th: 'เฉไฉ', label_en: 'Irrelevant', emoji: '🌀', desc_th: 'เบี่ยงประเด็น พูดเรื่องอื่นเพื่อหนีสถานการณ์' },
   { id: 'congruent', label_th: 'สอดคล้องกับตัวเอง', label_en: 'Congruent', emoji: '💚', desc_th: 'เป้าหมายของการเดินทาง — ตรงและเปิดใจ' },
 ];
 
