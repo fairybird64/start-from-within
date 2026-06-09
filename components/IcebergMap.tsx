@@ -1,0 +1,163 @@
+'use client';
+
+import type { IcebergLayer, StarToken } from '@/lib/types';
+
+interface LayerConfig {
+  id: IcebergLayer;
+  label_th: string;
+  label_en: string;
+  color: string;
+  hoverColor: string;
+  widthClass: string;
+  heightClass: string;
+  description_th: string;
+}
+
+const LAYERS: LayerConfig[] = [
+  {
+    id: 'behavior',
+    label_th: 'พฤติกรรม',
+    label_en: 'Behavior',
+    color: 'bg-sky-200',
+    hoverColor: 'hover:bg-sky-300',
+    widthClass: 'w-full',
+    heightClass: 'h-14',
+    description_th: 'สิ่งที่คนอื่นมองเห็น',
+  },
+  {
+    id: 'coping',
+    label_th: 'ท่าทางการรับมือ',
+    label_en: 'Coping Stances',
+    color: 'bg-blue-200',
+    hoverColor: 'hover:bg-blue-300',
+    widthClass: 'w-11/12',
+    heightClass: 'h-12',
+    description_th: 'วิธีที่เราปกป้องตัวเอง',
+  },
+  {
+    id: 'feelings',
+    label_th: 'ความรู้สึก',
+    label_en: 'Feelings',
+    color: 'bg-indigo-200',
+    hoverColor: 'hover:bg-indigo-300',
+    widthClass: 'w-10/12',
+    heightClass: 'h-12',
+    description_th: 'อารมณ์ที่เราสัมผัส',
+  },
+  {
+    id: 'feelings_about_feelings',
+    label_th: 'ความรู้สึกต่อความรู้สึก',
+    label_en: 'Feelings About Feelings',
+    color: 'bg-violet-200',
+    hoverColor: 'hover:bg-violet-300',
+    widthClass: 'w-9/12',
+    heightClass: 'h-12',
+    description_th: 'ทัศนคติต่ออารมณ์ของตัวเอง',
+  },
+  {
+    id: 'perceptions',
+    label_th: 'การรับรู้',
+    label_en: 'Perceptions',
+    color: 'bg-purple-200',
+    hoverColor: 'hover:bg-purple-300',
+    widthClass: 'w-8/12',
+    heightClass: 'h-12',
+    description_th: 'ความคิดและการตีความ',
+  },
+  {
+    id: 'expectations',
+    label_th: 'ความคาดหวัง',
+    label_en: 'Expectations',
+    color: 'bg-fuchsia-200',
+    hoverColor: 'hover:bg-fuchsia-300',
+    widthClass: 'w-7/12',
+    heightClass: 'h-12',
+    description_th: 'สิ่งที่เราหวังจากตัวเองและผู้อื่น',
+  },
+  {
+    id: 'yearnings',
+    label_th: 'ความปรารถนาลึกๆ',
+    label_en: 'Yearnings',
+    color: 'bg-rose-200',
+    hoverColor: 'hover:bg-rose-300',
+    widthClass: 'w-6/12',
+    heightClass: 'h-12',
+    description_th: 'ความต้องการพื้นฐานของหัวใจ',
+  },
+  {
+    id: 'self',
+    label_th: 'ตัวตน / พลังชีวิต',
+    label_en: 'Self / Life Force',
+    color: 'bg-amber-200',
+    hoverColor: 'hover:bg-amber-300',
+    widthClass: 'w-5/12',
+    heightClass: 'h-14',
+    description_th: 'แก่นแท้ของเรา',
+  },
+];
+
+interface Props {
+  activeLayer?: IcebergLayer | null;
+  stars: StarToken[];
+  onLayerSelect?: (layer: IcebergLayer) => void;
+  interactive?: boolean;
+}
+
+export default function IcebergMap({ activeLayer, stars, onLayerSelect, interactive = false }: Props) {
+  const starCountFor = (layer: IcebergLayer) => stars.filter((s) => s.layer === layer).length;
+
+  return (
+    <div className="flex flex-col items-center gap-1 py-4 select-none">
+      {/* Above waterline label */}
+      <div className="text-xs text-stone-400 mb-1 tracking-wider uppercase">ส่วนที่มองเห็น</div>
+
+      {LAYERS.map((layer, index) => {
+        const isActive = activeLayer === layer.id;
+        const count = starCountFor(layer.id);
+        const isBelowWater = index >= 2;
+
+        return (
+          <div key={layer.id} className="w-full flex flex-col items-center">
+            {/* Waterline divider */}
+            {index === 2 && (
+              <div className="w-full flex items-center gap-2 my-2">
+                <div className="flex-1 h-px bg-blue-300/60" />
+                <span className="text-xs text-blue-400 tracking-widest">〰 เส้นน้ำ 〰</span>
+                <div className="flex-1 h-px bg-blue-300/60" />
+              </div>
+            )}
+
+            <button
+              onClick={() => interactive && onLayerSelect?.(layer.id)}
+              disabled={!interactive}
+              className={[
+                'transition-all duration-200 rounded-lg flex items-center justify-center gap-2 px-3',
+                layer.widthClass,
+                layer.heightClass,
+                layer.color,
+                interactive ? `${layer.hoverColor} cursor-pointer` : 'cursor-default',
+                isActive ? 'ring-2 ring-offset-1 ring-stone-600 scale-105 shadow-md' : '',
+                isBelowWater ? 'opacity-90' : '',
+              ].join(' ')}
+              title={layer.description_th}
+            >
+              <span className="text-sm font-medium text-stone-700 text-center leading-tight">
+                {layer.label_th}
+              </span>
+              {count > 0 && (
+                <span className="flex items-center gap-0.5">
+                  {Array.from({ length: Math.min(count, 5) }).map((_, i) => (
+                    <span key={i} className="text-base leading-none">⭐</span>
+                  ))}
+                  {count > 5 && <span className="text-xs text-stone-600">+{count - 5}</span>}
+                </span>
+              )}
+            </button>
+          </div>
+        );
+      })}
+
+      <div className="text-xs text-stone-400 mt-1 tracking-wider uppercase">แก่นแท้</div>
+    </div>
+  );
+}
