@@ -244,18 +244,6 @@ export default function GameSession() {
           <p className="text-sm text-stone-400 mt-1">Start from Within</p>
         </header>
 
-        {/* Support Zone — always visible during explore */}
-        {(state.phase === 'explore') && (
-          <SupportZone
-            onBelief={handleBelief}
-            onRest={handleRest}
-            onStop={handleStop}
-            supportCard={state.supportZoneCard}
-            onNewSupportCard={handleNewSupportCard}
-            onCloseSupportCard={() => setState((prev) => ({ ...prev, supportZoneCard: null, supportZoneOpen: false }))}
-          />
-        )}
-
         {/* ── CHECK-IN ── */}
         {state.phase === 'check_in' && state.currentCard && (
           <PhaseCard title="เช็คอิน" subtitle="Check-In">
@@ -320,7 +308,7 @@ export default function GameSession() {
 
         {/* ── EXPLORE ── */}
         {state.phase === 'explore' && (
-          <PhaseCard title="สำรวจ" subtitle="Explore">
+          <PhaseCard title="สำรวจภูเขาน้ำแข็งของคุณ" subtitle="เลือกชั้นที่อยากสำรวจ — การ์ดจะช่วยพาคุณลงลึก เริ่มจากชั้นไหนก็ได้ ไม่มีผิดถูก">
             <IcebergMap
               activeLayer={state.currentLayer}
               stars={state.stars}
@@ -329,7 +317,7 @@ export default function GameSession() {
             />
 
             {state.currentCard && state.currentLayer && (
-              <div className="flex flex-col gap-4 mt-4">
+              <div className="flex flex-col gap-4 mt-2">
                 <div className="text-xs text-center text-stone-400 uppercase tracking-wider">
                   {LAYER_LABELS[state.currentLayer]}
                 </div>
@@ -368,6 +356,18 @@ export default function GameSession() {
                 พร้อมสะท้อนกลับ →
               </button>
             )}
+
+            {/* Support zone — pinned at bottom, small & unobtrusive */}
+            <div className="mt-6 pt-4 border-t border-stone-100">
+              <SupportZone
+                onBelief={handleBelief}
+                onRest={handleRest}
+                onStop={handleStop}
+                supportCard={state.supportZoneCard}
+                onNewSupportCard={handleNewSupportCard}
+                onCloseSupportCard={() => setState((prev) => ({ ...prev, supportZoneCard: null, supportZoneOpen: false }))}
+              />
+            </div>
           </PhaseCard>
         )}
 

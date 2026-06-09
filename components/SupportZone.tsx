@@ -25,19 +25,19 @@ export default function SupportZone({
       <div className="flex gap-2 justify-center flex-wrap">
         <button
           onClick={onBelief}
-          className="px-4 py-2 rounded-full bg-amber-100 hover:bg-amber-200 text-amber-800 text-sm font-medium transition-colors border border-amber-200"
+          className="px-3 py-1.5 rounded-full bg-amber-50 hover:bg-amber-100 text-amber-700 text-xs transition-colors border border-amber-200"
         >
           ✨ ขอเพิ่ม
         </button>
         <button
           onClick={onRest}
-          className="px-4 py-2 rounded-full bg-blue-100 hover:bg-blue-200 text-blue-800 text-sm font-medium transition-colors border border-blue-200"
+          className="px-3 py-1.5 rounded-full bg-blue-50 hover:bg-blue-100 text-blue-600 text-xs transition-colors border border-blue-200"
         >
           🌿 ขอพัก
         </button>
         <button
           onClick={onStop}
-          className="px-4 py-2 rounded-full bg-stone-100 hover:bg-stone-200 text-stone-600 text-sm font-medium transition-colors border border-stone-200"
+          className="px-3 py-1.5 rounded-full bg-stone-50 hover:bg-stone-100 text-stone-500 text-xs transition-colors border border-stone-200"
         >
           🚪 ขอหยุด
         </button>

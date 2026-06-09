@@ -105,16 +105,25 @@ interface Props {
 
 export default function IcebergMap({ activeLayer, stars, onLayerSelect, interactive = false }: Props) {
   const starCountFor = (layer: IcebergLayer) => stars.filter((s) => s.layer === layer).length;
+  const totalStars = stars.length;
 
   return (
-    <div className="flex flex-col items-center gap-1 py-4 select-none">
+    <div className="flex flex-col items-center gap-1 py-2 select-none">
       {/* Above waterline label */}
-      <div className="text-xs text-stone-400 mb-1 tracking-wider uppercase">ส่วนที่มองเห็น</div>
+      <div className="flex items-center justify-between w-full mb-1 px-1">
+        <div className="text-xs text-stone-400 tracking-wider uppercase">ส่วนที่มองเห็น</div>
+        {interactive && (
+          <div className="text-xs text-stone-500 bg-stone-100 rounded-full px-2 py-0.5">
+            ⭐ {totalStars} ดวง
+          </div>
+        )}
+      </div>
 
       {LAYERS.map((layer, index) => {
         const isActive = activeLayer === layer.id;
         const count = starCountFor(layer.id);
         const isBelowWater = index >= 2;
+        const isTopLayer = index === 0;
 
         return (
           <div key={layer.id} className="w-full flex flex-col items-center">
@@ -127,32 +136,42 @@ export default function IcebergMap({ activeLayer, stars, onLayerSelect, interact
               </div>
             )}
 
-            <button
-              onClick={() => interactive && onLayerSelect?.(layer.id)}
-              disabled={!interactive}
-              className={[
-                'transition-all duration-200 rounded-lg flex items-center justify-center gap-2 px-3',
-                layer.widthClass,
-                layer.heightClass,
-                layer.color,
-                interactive ? `${layer.hoverColor} cursor-pointer` : 'cursor-default',
-                isActive ? 'ring-2 ring-offset-1 ring-stone-600 scale-105 shadow-md' : '',
-                isBelowWater ? 'opacity-90' : '',
-              ].join(' ')}
-              title={layer.description_th}
-            >
-              <span className="text-sm font-medium text-stone-700 text-center leading-tight">
-                {layer.label_th}
-              </span>
-              {count > 0 && (
-                <span className="flex items-center gap-0.5">
-                  {Array.from({ length: Math.min(count, 5) }).map((_, i) => (
-                    <span key={i} className="text-base leading-none">⭐</span>
-                  ))}
-                  {count > 5 && <span className="text-xs text-stone-600">+{count - 5}</span>}
+            <div className="w-full flex items-center justify-center relative">
+              <button
+                onClick={() => interactive && onLayerSelect?.(layer.id)}
+                disabled={!interactive}
+                className={[
+                  'transition-all duration-200 rounded-lg flex items-center justify-center gap-2 px-3',
+                  layer.widthClass,
+                  layer.heightClass,
+                  layer.color,
+                  interactive ? `${layer.hoverColor} cursor-pointer` : 'cursor-default',
+                  isActive ? 'ring-2 ring-offset-1 ring-stone-600 scale-105 shadow-md' : '',
+                  isBelowWater ? 'opacity-90' : '',
+                  interactive && isTopLayer && !isActive ? 'animate-pulse-subtle' : '',
+                ].join(' ')}
+                title={layer.description_th}
+              >
+                <span className="text-sm font-medium text-stone-700 text-center leading-tight">
+                  {layer.label_th}
+                </span>
+                {count > 0 && (
+                  <span className="flex items-center gap-0.5">
+                    {Array.from({ length: Math.min(count, 5) }).map((_, i) => (
+                      <span key={i} className="text-base leading-none">⭐</span>
+                    ))}
+                    {count > 5 && <span className="text-xs text-stone-600">+{count - 5}</span>}
+                  </span>
+                )}
+              </button>
+
+              {/* "Start here" hint on top layer */}
+              {interactive && isTopLayer && !isActive && (
+                <span className="absolute right-0 text-xs text-sky-500 font-medium whitespace-nowrap pointer-events-none">
+                  เริ่มต้นที่นี่ ↓
                 </span>
               )}
-            </button>
+            </div>
           </div>
         );
       })}
