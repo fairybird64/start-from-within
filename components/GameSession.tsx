@@ -336,10 +336,10 @@ export default function GameSession() {
                 {aiReflection && (
                   <div className="flex flex-col gap-3">
                     <ReflectionBubble text={aiReflection} />
-                    <p className="text-xs text-center text-stone-400">
-                      กดชั้นนี้อีกครั้งบนแผนที่เพื่อวางดาว หรือเขียนต่อด้านล่าง
-                    </p>
                     <PlayerInput onSubmit={handleExploreSubmit} loading={loading} placeholder="เขียนต่อ หรือเลือกชั้นอื่นบนแผนที่..." />
+                    <p className="text-sm text-stone-400 text-center">
+                      พิมพ์ต่อเพื่อสำรวจชั้นนี้ให้ลึกขึ้น<br />หรือเลือกชั้นอื่นบนแผนที่ด้านบน
+                    </p>
                   </div>
                 )}
               </div>
