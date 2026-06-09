@@ -186,8 +186,7 @@ export default function GameSession() {
   }
 
   function handleStop() {
-    setState((prev) => ({ ...prev, phase: 'check_out', currentCard: null }));
-    setCheckOutCard(getRandomCard('check_out'));
+    goToReflect();
   }
 
   function handleNewSupportCard() {
@@ -346,15 +345,6 @@ export default function GameSession() {
                   </div>
                 )}
               </div>
-            )}
-
-            {!state.currentCard && !state.currentLayer && state.stars.length > 0 && (
-              <button
-                onClick={goToReflect}
-                className="self-center mt-4 px-6 py-3 rounded-full bg-stone-700 hover:bg-stone-800 text-white text-sm font-medium transition-colors"
-              >
-                พร้อมสะท้อนกลับ →
-              </button>
             )}
 
             {/* Support zone — pinned at bottom, small & unobtrusive */}
