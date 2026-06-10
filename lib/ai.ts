@@ -29,8 +29,9 @@ export async function reflectPlayerInput(
   currentLayer?: IcebergLayer | null,
   copingStance?: CopingStance | null,
 ): Promise<ReflectResult> {
+  // CLINICAL WORDING — approved by clinical reviewer, do not modify
   const copingContext = (currentLayer === 'coping' && copingStance)
-    ? `\nCOPING CONTEXT: The player selected the stance "${COPING_STANCE_LABELS[copingStance]}" (${copingStance}) in the Situation phase. You may reference it ONLY as "ท่าทีที่คุณสังเกตในสถานการณ์นี้" — never as identity ("คุณเป็นคน..."). You may invite exploring what the stance protects, e.g. "ได้ยินว่าตอนนั้นคุณใช้ท่าที${COPING_STANCE_LABELS[copingStance]} — อยากลองสำรวจไหมว่าท่าทีนั้นกำลังปกป้องอะไรอยู่ข้างใน". HARD RULE: never map stance to a specific yearning or need — that is interpretation. Only invite, never conclude.`
+    ? `\nCOPING CONTEXT: The player selected the stance "${COPING_STANCE_LABELS[copingStance]}" (${copingStance}) in the Situation phase. You may reference it ONLY as "ท่าทีที่คุณสังเกตในสถานการณ์นี้" — never as identity ("คุณเป็นคน..."). Frame the stance with gentle caretaking perspective — as if it has been trying to take care of something inside them — e.g. "ได้ยินว่าตอนนั้นคุณใช้ท่าที${COPING_STANCE_LABELS[copingStance]} — ถ้าลองมองท่าทีนี้อย่างอ่อนโยน เหมือนมันกำลังพยายามช่วยดูแลบางอย่างในใจคุณอยู่… คุณคิดว่ามันกำลังช่วยดูแลอะไรให้คุณคะ". Apply this "gentle caretaking" frame consistently across all stances — never use "ปกป้อง" (protect/defend). HARD RULE: never map stance to a specific yearning or need — that is interpretation. Only invite, never conclude.`
     : '';
 
   const message = await client.messages.create({
