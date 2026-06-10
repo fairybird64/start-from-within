@@ -1,16 +1,46 @@
 import Anthropic from '@anthropic-ai/sdk';
+import type { IcebergLayer, CopingStance } from './types';
+
+const VALID_LAYERS: IcebergLayer[] = [
+  'behavior', 'coping', 'feelings', 'feelings_about_feelings',
+  'perceptions', 'expectations', 'yearnings', 'self',
+];
+
+const COPING_STANCE_LABELS: Record<CopingStance, string> = {
+  placating: 'ยอมตาม',
+  blaming: 'โทษผู้อื่น',
+  super_reasonable: 'มีเหตุผลเกินไป',
+  irrelevant: 'เฉไฉ',
+};
+
+
 
 const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
 
+export interface ReflectResult {
+  reflection: string;
+  suggestedLayer: IcebergLayer | null;
+}
+
 // CLINICAL REVIEW REQUIRED
-export async function reflectPlayerInput(playerInput: string, cardQuestion: string): Promise<string> {
+export async function reflectPlayerInput(
+  playerInput: string,
+  cardQuestion: string,
+  currentLayer?: IcebergLayer | null,
+  copingStance?: CopingStance | null,
+): Promise<ReflectResult> {
+  const copingContext = (currentLayer === 'coping' && copingStance)
+    ? `\nCOPING CONTEXT: The player selected the stance "${COPING_STANCE_LABELS[copingStance]}" (${copingStance}) in the Situation phase. You may reference it ONLY as "ท่าทีที่คุณสังเกตในสถานการณ์นี้" — never as identity ("คุณเป็นคน..."). You may invite exploring what the stance protects, e.g. "ได้ยินว่าตอนนั้นคุณใช้ท่าที${COPING_STANCE_LABELS[copingStance]} — อยากลองสำรวจไหมว่าท่าทีนั้นกำลังปกป้องอะไรอยู่ข้างใน". HARD RULE: never map stance to a specific yearning or need — that is interpretation. Only invite, never conclude.`
+    : '';
+
   const message = await client.messages.create({
     model: 'claude-opus-4-8',
-    max_tokens: 200,
+    max_tokens: 300,
     messages: [
       {
         role: 'user',
         content: `You are a compassionate mirror for a therapeutic self-exploration game using Satir's Iceberg Model.
+The iceberg layers from surface to core are: behavior → coping → feelings → feelings_about_feelings → perceptions → expectations → yearnings → self.${copingContext}
 
 HARD RULES — never violate:
 - Reflect ONLY the player's exact words and vocabulary. Add nothing new.
@@ -19,15 +49,19 @@ HARD RULES — never violate:
 - Never upgrade vocabulary: if they said "กังวล" echo "กังวล", never "ความวิตกกังวล"
 - No diagnosis, analysis, interpretation, or advice.
 - Maximum 1 question per response total.
+- Never map a coping stance to a specific need or yearning.
 
 SPECIAL CASE — if the player is asking for advice (e.g. "ควรทำยังไง", "ช่วยแนะนำ", "ทำไงดี"):
-Respond with exactly this pattern (adapt slightly to their words):
+Set suggestedLayer to null. Respond with exactly this pattern (adapt slightly to their words):
 "ได้ยินว่าอยากรู้ว่าควรทำยังไง — เกมนี้ไม่มีคำตอบสำเร็จรูปให้ แต่บ่อยครั้งคำตอบอยู่ลึกลงไปข้างใน อยากลองสำรวจไหมว่าใต้คำถามนี้มีความรู้สึกอะไรอยู่"
 
-NORMAL CASE — for all other input:
-1. Mirror reflection: 1-2 sentences using only their words.
-2. Optionally add ONE process invitation (not content) that gently points deeper into the iceberg — e.g. "อยากลองสำรวจไหมว่าตอนนั้นข้างในรู้สึกอะไรอยู่" — only if it feels natural. The invitation must contain ZERO new content or interpretation.
-Output the reflection (and optional invitation) only — no labels, no headings.
+NORMAL CASE — respond in JSON only with this exact shape:
+{
+  "reflection": "<mirror reflection 1-2 sentences using only their words> [optionally: ONE process invitation pointing deeper, with zero new content — only if natural]",
+  "suggestedLayer": "<one of: behavior|coping|feelings|feelings_about_feelings|perceptions|expectations|yearnings|self — or null if no invitation given>"
+}
+The suggestedLayer should be a deeper layer than the current layer (${currentLayer ?? 'unknown'}), or null.
+Do not output anything outside the JSON.
 
 Card question (for context only): "${cardQuestion}"
 What the person wrote: "${playerInput}"`,
@@ -36,7 +70,16 @@ What the person wrote: "${playerInput}"`,
   });
 
   const block = message.content[0];
-  return block.type === 'text' ? block.text : '';
+  if (block.type !== 'text') return { reflection: '', suggestedLayer: null };
+
+  try {
+    const parsed = JSON.parse(block.text);
+    const layer = VALID_LAYERS.includes(parsed.suggestedLayer) ? parsed.suggestedLayer as IcebergLayer : null;
+    return { reflection: parsed.reflection ?? '', suggestedLayer: layer };
+  } catch {
+    // Fallback: treat entire response as plain reflection (advice deflection case)
+    return { reflection: block.text, suggestedLayer: null };
+  }
 }
 
 export async function reflectSessionLayers(sessionContent: string): Promise<string> {
