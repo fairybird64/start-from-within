@@ -328,7 +328,7 @@ export default function GameSession() {
                     <ReflectionBubble text={aiReflection} />
                     <PlayerInput onSubmit={handleExploreSubmit} loading={loading} placeholder="เขียนต่อ หรือเลือกชั้นอื่นบนแผนที่..." />
                     <p className="text-sm text-stone-400 text-center">
-                      พิมพ์ต่อเพื่อสำรวจชั้นนี้ให้ลึกขึ้น<br />หรือเลือกชั้นอื่นบนแผนที่ด้านบน
+                      พิมพ์ต่อเพื่อสำรวจให้ลึกขึ้น · คลิกชั้นเดิมอีกครั้งเพื่อวางดาว ⭐<br />· หรือเลือกชั้นอื่นเพื่อสำรวจต่อ
                     </p>
                   </div>
                 )}
