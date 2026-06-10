@@ -45,6 +45,7 @@ function initialState(): GameState {
 export default function GameSession() {
   const [state, setState] = useState<GameState>(initialState);
   const [aiReflection, setAiReflection] = useState<string>('');
+  const [suggestedLayer, setSuggestedLayer] = useState<IcebergLayer | null>(null);
   const [aiSummary, setAiSummary] = useState<string>('');
   const [loading, setLoading] = useState(false);
   const [checkOutCard, setCheckOutCard] = useState<Card | null>(null);
@@ -68,17 +69,22 @@ export default function GameSession() {
     []
   );
 
-  async function getReflection(answer: string, question: string): Promise<string> {
+  async function getReflection(
+    answer: string,
+    question: string,
+    currentLayer?: IcebergLayer | null,
+    copingStance?: CopingStance | null,
+  ): Promise<{ reflection: string; suggestedLayer: IcebergLayer | null }> {
     try {
       const res = await fetch('/api/reflect', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ playerInput: answer, cardQuestion: question }),
+        body: JSON.stringify({ playerInput: answer, cardQuestion: question, currentLayer, copingStance }),
       });
       const data = await res.json();
-      return data.reflection ?? '';
+      return { reflection: data.reflection ?? '', suggestedLayer: data.suggestedLayer ?? null };
     } catch {
-      return '';
+      return { reflection: '', suggestedLayer: null };
     }
   }
 
@@ -104,7 +110,7 @@ export default function GameSession() {
   async function handleCheckInSubmit(answer: string) {
     if (!state.currentCard) return;
     setLoading(true);
-    const reflection = await getReflection(answer, state.currentCard.question_th);
+    const { reflection } = await getReflection(answer, state.currentCard.question_th);
     const card = state.currentCard;
     addEntry({ phase: 'check_in', cardId: card.id, question: card.question_th, playerAnswer: answer, aiReflection: reflection });
     setCheckInCard(card); // save for check-out comparison
@@ -140,6 +146,7 @@ export default function GameSession() {
       return;
     }
     setAiReflection('');
+    setSuggestedLayer(null);
     const card = getRandomCardForLayer(layer, Array.from(state.usedCardIds));
     setState((prev) => ({
       ...prev,
@@ -162,9 +169,15 @@ export default function GameSession() {
   async function handleExploreSubmit(answer: string) {
     if (!state.currentCard || !state.currentLayer) return;
     setLoading(true);
-    const reflection = await getReflection(answer, state.currentCard.question_th);
+    const { reflection, suggestedLayer: sl } = await getReflection(
+      answer,
+      state.currentCard.question_th,
+      state.currentLayer,
+      state.copingStance,
+    );
     addEntry({ phase: 'explore', cardId: state.currentCard.id, question: state.currentCard.question_th, playerAnswer: answer, aiReflection: reflection, layer: state.currentLayer });
     setAiReflection(reflection);
+    setSuggestedLayer(sl);
     setLoading(false);
   }
 
@@ -177,6 +190,7 @@ export default function GameSession() {
       currentLayer: null,
     }));
     setAiReflection('');
+    setSuggestedLayer(null);
   }
 
   // ── SUPPORT ZONE ──
@@ -214,7 +228,7 @@ export default function GameSession() {
     const card = appreciateCard;
     if (card) addEntry({ phase: 'appreciate', cardId: card.id, question: card.question_th, playerAnswer: answer });
     setLoading(true);
-    const reflection = await getReflection(answer, card?.question_th ?? '');
+    const { reflection } = await getReflection(answer, card?.question_th ?? '');
     setAppreciateReflection(reflection);
     setLoading(false);
   }
@@ -326,6 +340,14 @@ export default function GameSession() {
                 {aiReflection && (
                   <div className="flex flex-col gap-3">
                     <ReflectionBubble text={aiReflection} />
+                    {suggestedLayer && (
+                      <button
+                        onClick={() => handleLayerSelect(suggestedLayer)}
+                        className="self-center px-4 py-1.5 rounded-full bg-indigo-50 hover:bg-indigo-100 text-indigo-700 text-sm border border-indigo-200 transition-colors"
+                      >
+                        → สำรวจชั้น{LAYER_LABELS[suggestedLayer]}
+                      </button>
+                    )}
                     <PlayerInput onSubmit={handleExploreSubmit} loading={loading} placeholder="เขียนต่อ หรือเลือกชั้นอื่นบนแผนที่..." />
                     <p className="text-sm text-stone-400 text-center">
                       พิมพ์ต่อเพื่อสำรวจให้ลึกขึ้น · คลิกชั้นเดิมอีกครั้งเพื่อวางดาว ⭐<br />· หรือเลือกชั้นอื่นเพื่อสำรวจต่อ
