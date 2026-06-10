@@ -5,16 +5,66 @@
       "name_th": "เช็คอิน",
       "name_en": "Check-In",
       "cards": [
-        { "id": "ci_01", "deck_id": "check_in", "question_th": "ตอนนี้ร่างกายของคุณรู้สึกอย่างไร?", "question_en": "How does your body feel right now?" },
-        { "id": "ci_02", "deck_id": "check_in", "question_th": "มีอะไรที่คุณอยากวางไว้ก่อนเข้าสู่การสำรวจนี้?", "question_en": "Is there anything you'd like to set aside before this exploration?" },
-        { "id": "ci_03", "deck_id": "check_in", "question_th": "ความรู้สึกแรกที่ผุดขึ้นมาตอนนี้คืออะไร?", "question_en": "What is the first feeling that comes up for you right now?" },
-        { "id": "ci_04", "deck_id": "check_in", "question_th": "คุณมาที่นี่ด้วยความตั้งใจอะไร?", "question_en": "What intention brings you here today?" },
-        { "id": "ci_05", "deck_id": "check_in", "question_th": "ถ้าความรู้สึกของคุณตอนนี้เป็นสภาพอากาศ มันจะเป็นอะไร?", "question_en": "If your current feeling were weather, what would it be?" },
-        { "id": "ci_06", "deck_id": "check_in", "question_th": "มีอะไรที่คุณต้องการจากการสำรวจครั้งนี้?", "question_en": "What do you need from this exploration?" },
-        { "id": "ci_07", "deck_id": "check_in", "question_th": "ระดับพลังงานของคุณตอนนี้อยู่ที่ไหน?", "question_en": "Where is your energy level right now?" },
-        { "id": "ci_08", "deck_id": "check_in", "question_th": "คุณรู้สึกอย่างไรกับการนั่งอยู่กับตัวเองในวันนี้?", "question_en": "How do you feel about sitting with yourself today?" },
-        { "id": "ci_09", "deck_id": "check_in", "question_th": "มีสิ่งที่ค้างอยู่ในใจที่อยากพูดถึงไหม?", "question_en": "Is there something on your mind that wants to be heard?" },
-        { "id": "ci_10", "deck_id": "check_in", "question_th": "คุณรู้สึกปลอดภัยพอที่จะสำรวจข้างในไหม?", "question_en": "Do you feel safe enough to explore within?" }
+        {
+          "id": "ci_01",
+          "deck_id": "check_in",
+          "question_th": "ตอนนี้ร่างกายของคุณรู้สึกอย่างไร?",
+          "question_en": "How does your body feel right now?"
+        },
+        {
+          "id": "ci_02",
+          "deck_id": "check_in",
+          "question_th": "มีอะไรที่คุณอยากวางไว้ก่อนเข้าสู่การสำรวจนี้?",
+          "question_en": "Is there anything you'd like to set aside before this exploration?"
+        },
+        {
+          "id": "ci_03",
+          "deck_id": "check_in",
+          "question_th": "ความรู้สึกแรกที่ผุดขึ้นมาตอนนี้คืออะไร?",
+          "question_en": "What is the first feeling that comes up for you right now?"
+        },
+        {
+          "id": "ci_04",
+          "deck_id": "check_in",
+          "question_th": "คุณมาที่นี่ด้วยความตั้งใจอะไร?",
+          "question_en": "What intention brings you here today?"
+        },
+        {
+          "id": "ci_05",
+          "deck_id": "check_in",
+          "question_th": "ถ้าความรู้สึกของคุณตอนนี้เป็นสภาพอากาศ มันจะเป็นอะไร?",
+          "question_en": "If your current feeling were weather, what would it be?"
+        },
+        {
+          "id": "ci_06",
+          "deck_id": "check_in",
+          "question_th": "มีอะไรที่คุณต้องการจากการสำรวจครั้งนี้?",
+          "question_en": "What do you need from this exploration?"
+        },
+        {
+          "id": "ci_07",
+          "deck_id": "check_in",
+          "question_th": "ระดับพลังงานของคุณตอนนี้อยู่ที่ไหน?",
+          "question_en": "Where is your energy level right now?"
+        },
+        {
+          "id": "ci_08",
+          "deck_id": "check_in",
+          "question_th": "คุณรู้สึกอย่างไรกับการนั่งอยู่กับตัวเองในวันนี้?",
+          "question_en": "How do you feel about sitting with yourself today?"
+        },
+        {
+          "id": "ci_09",
+          "deck_id": "check_in",
+          "question_th": "มีสิ่งที่ค้างอยู่ในใจที่อยากพูดถึงไหม?",
+          "question_en": "Is there something on your mind that wants to be heard?"
+        },
+        {
+          "id": "ci_10",
+          "deck_id": "check_in",
+          "question_th": "คุณรู้สึกปลอดภัยพอที่จะสำรวจข้างในไหม?",
+          "question_en": "Do you feel safe enough to explore within?"
+        }
       ]
     },
     {
@@ -22,16 +72,66 @@
       "name_th": "สถานการณ์",
       "name_en": "Situation",
       "cards": [
-        { "id": "sit_01", "deck_id": "situation", "question_th": "มีสถานการณ์ใดในชีวิตที่กำลังท้าทายคุณอยู่?", "question_en": "What situation in your life is challenging you right now?" },
-        { "id": "sit_02", "deck_id": "situation", "question_th": "เกิดอะไรขึ้นที่ทำให้คุณต้องการสำรวจตัวเองวันนี้?", "question_en": "What happened that brings you to explore yourself today?" },
-        { "id": "sit_03", "deck_id": "situation", "question_th": "ความสัมพันธ์ไหนที่กำลังต้องการความสนใจจากคุณ?", "question_en": "Which relationship is calling for your attention?" },
-        { "id": "sit_04", "deck_id": "situation", "question_th": "มีบทบาทใดในชีวิตที่รู้สึกหนักหรือยากในตอนนี้?", "question_en": "Which role in your life feels heavy or difficult right now?" },
-        { "id": "sit_05", "deck_id": "situation", "question_th": "อะไรที่ดูเหมือนซ้ำรอยในชีวิตคุณ?", "question_en": "What pattern seems to repeat itself in your life?" },
-        { "id": "sit_06", "deck_id": "situation", "question_th": "มีการตัดสินใจอะไรที่รู้สึกยากจะเผชิญ?", "question_en": "Is there a decision that feels hard to face?" },
-        { "id": "sit_07", "deck_id": "situation", "question_th": "อะไรที่คุณหลีกเลี่ยงมานานแล้วแต่อยากเข้าใจ?", "question_en": "What have you been avoiding that you'd like to understand?" },
-        { "id": "sit_08", "deck_id": "situation", "question_th": "เหตุการณ์อะไรที่ยังคงส่งผลต่อความรู้สึกของคุณ?", "question_en": "What event still affects how you feel?" },
-        { "id": "sit_09", "deck_id": "situation", "question_th": "คุณกำลังต่อสู้กับอะไรภายในตัวเองอยู่?", "question_en": "What are you struggling with inside yourself?" },
-        { "id": "sit_10", "deck_id": "situation", "question_th": "มีความขัดแย้งอะไรที่ต้องการพื้นที่ในใจของคุณ?", "question_en": "What conflict needs space in your heart?" }
+        {
+          "id": "sit_01",
+          "deck_id": "situation",
+          "question_th": "มีสถานการณ์ใดในชีวิตที่กำลังท้าทายคุณอยู่?",
+          "question_en": "What situation in your life is challenging you right now?"
+        },
+        {
+          "id": "sit_02",
+          "deck_id": "situation",
+          "question_th": "เกิดอะไรขึ้นที่ทำให้คุณต้องการสำรวจตัวเองวันนี้?",
+          "question_en": "What happened that brings you to explore yourself today?"
+        },
+        {
+          "id": "sit_03",
+          "deck_id": "situation",
+          "question_th": "ความสัมพันธ์ไหนที่กำลังต้องการความสนใจจากคุณ?",
+          "question_en": "Which relationship is calling for your attention?"
+        },
+        {
+          "id": "sit_04",
+          "deck_id": "situation",
+          "question_th": "มีบทบาทใดในชีวิตที่รู้สึกหนักหรือยากในตอนนี้?",
+          "question_en": "Which role in your life feels heavy or difficult right now?"
+        },
+        {
+          "id": "sit_05",
+          "deck_id": "situation",
+          "question_th": "อะไรที่ดูเหมือนซ้ำรอยในชีวิตคุณ?",
+          "question_en": "What pattern seems to repeat itself in your life?"
+        },
+        {
+          "id": "sit_06",
+          "deck_id": "situation",
+          "question_th": "มีการตัดสินใจอะไรที่รู้สึกยากจะเผชิญ?",
+          "question_en": "Is there a decision that feels hard to face?"
+        },
+        {
+          "id": "sit_07",
+          "deck_id": "situation",
+          "question_th": "อะไรที่คุณหลีกเลี่ยงมานานแล้วแต่อยากเข้าใจ?",
+          "question_en": "What have you been avoiding that you'd like to understand?"
+        },
+        {
+          "id": "sit_08",
+          "deck_id": "situation",
+          "question_th": "เหตุการณ์อะไรที่ยังคงส่งผลต่อความรู้สึกของคุณ?",
+          "question_en": "What event still affects how you feel?"
+        },
+        {
+          "id": "sit_09",
+          "deck_id": "situation",
+          "question_th": "คุณกำลังต่อสู้กับอะไรภายในตัวเองอยู่?",
+          "question_en": "What are you struggling with inside yourself?"
+        },
+        {
+          "id": "sit_10",
+          "deck_id": "situation",
+          "question_th": "มีความขัดแย้งอะไรที่ต้องการพื้นที่ในใจของคุณ?",
+          "question_en": "What conflict needs space in your heart?"
+        }
       ]
     },
     {
@@ -40,16 +140,76 @@
       "name_en": "Behavior",
       "layer": "behavior",
       "cards": [
-        { "id": "beh_01", "deck_id": "behavior", "layer": "behavior", "question_th": "คุณทำอะไรเมื่ออยู่ในสถานการณ์นั้น?", "question_en": "What did you do when you were in that situation?" },
-        { "id": "beh_02", "deck_id": "behavior", "layer": "behavior", "question_th": "คนอื่นมองเห็นอะไรจากการกระทำของคุณ?", "question_en": "What do others see from your actions?" },
-        { "id": "beh_03", "deck_id": "behavior", "layer": "behavior", "question_th": "สิ่งที่คุณทำนั้นช่วยหรือขัดขวางตัวคุณอย่างไร?", "question_en": "How did what you do help or hinder you?" },
-        { "id": "beh_04", "deck_id": "behavior", "layer": "behavior", "question_th": "พฤติกรรมอะไรที่คุณสังเกตว่าตัวเองทำซ้ำๆ?", "question_en": "What behavior do you notice yourself repeating?" },
-        { "id": "beh_05", "deck_id": "behavior", "layer": "behavior", "question_th": "คุณพูดหรือแสดงออกอะไรออกมาในสถานการณ์นั้น?", "question_en": "What did you say or express in that situation?" },
-        { "id": "beh_06", "deck_id": "behavior", "layer": "behavior", "question_th": "มีพฤติกรรมอะไรที่คุณอยากเปลี่ยน?", "question_en": "Is there a behavior you'd like to change?" },
-        { "id": "beh_07", "deck_id": "behavior", "layer": "behavior", "question_th": "ร่างกายของคุณตอบสนองอย่างไรในสถานการณ์นั้น?", "question_en": "How did your body respond in that situation?" },
-        { "id": "beh_08", "deck_id": "behavior", "layer": "behavior", "question_th": "คุณถอนตัวหรือเข้าหาในสถานการณ์นั้น?", "question_en": "Did you withdraw or approach in that situation?" },
-        { "id": "beh_09", "deck_id": "behavior", "layer": "behavior", "question_th": "สิ่งที่คุณไม่ได้ทำแต่อยากทำคืออะไร?", "question_en": "What did you not do but wished you had?" },
-        { "id": "beh_10", "deck_id": "behavior", "layer": "behavior", "question_th": "การกระทำของคุณสะท้อนสิ่งที่คุณรู้สึกจริงๆ ไหม?", "question_en": "Did your actions reflect what you truly felt?" }
+        {
+          "id": "beh_01",
+          "deck_id": "behavior",
+          "layer": "behavior",
+          "question_th": "คุณทำอะไรเมื่ออยู่ในสถานการณ์นั้น?",
+          "question_en": "What did you do when you were in that situation?"
+        },
+        {
+          "id": "beh_02",
+          "deck_id": "behavior",
+          "layer": "behavior",
+          "question_th": "คนอื่นมองเห็นอะไรจากการกระทำของคุณ?",
+          "question_en": "What do others see from your actions?"
+        },
+        {
+          "id": "beh_03",
+          "deck_id": "behavior",
+          "layer": "behavior",
+          "question_th": "สิ่งที่คุณทำนั้นช่วยหรือขัดขวางตัวคุณอย่างไร?",
+          "question_en": "How did what you do help or hinder you?"
+        },
+        {
+          "id": "beh_04",
+          "deck_id": "behavior",
+          "layer": "behavior",
+          "question_th": "พฤติกรรมอะไรที่คุณสังเกตว่าตัวเองทำซ้ำๆ?",
+          "question_en": "What behavior do you notice yourself repeating?"
+        },
+        {
+          "id": "beh_05",
+          "deck_id": "behavior",
+          "layer": "behavior",
+          "question_th": "คุณพูดหรือแสดงออกอะไรออกมาในสถานการณ์นั้น?",
+          "question_en": "What did you say or express in that situation?"
+        },
+        {
+          "id": "beh_06",
+          "deck_id": "behavior",
+          "layer": "behavior",
+          "question_th": "มีพฤติกรรมอะไรที่คุณอยากเปลี่ยน?",
+          "question_en": "Is there a behavior you'd like to change?"
+        },
+        {
+          "id": "beh_07",
+          "deck_id": "behavior",
+          "layer": "behavior",
+          "question_th": "ร่างกายของคุณตอบสนองอย่างไรในสถานการณ์นั้น?",
+          "question_en": "How did your body respond in that situation?"
+        },
+        {
+          "id": "beh_08",
+          "deck_id": "behavior",
+          "layer": "behavior",
+          "question_th": "คุณถอนตัวหรือเข้าหาในสถานการณ์นั้น?",
+          "question_en": "Did you withdraw or approach in that situation?"
+        },
+        {
+          "id": "beh_09",
+          "deck_id": "behavior",
+          "layer": "behavior",
+          "question_th": "สิ่งที่คุณไม่ได้ทำแต่อยากทำคืออะไร?",
+          "question_en": "What did you not do but wished you had?"
+        },
+        {
+          "id": "beh_10",
+          "deck_id": "behavior",
+          "layer": "behavior",
+          "question_th": "การกระทำของคุณสะท้อนสิ่งที่คุณรู้สึกจริงๆ ไหม?",
+          "question_en": "Did your actions reflect what you truly felt?"
+        }
       ]
     },
     {
@@ -58,16 +218,76 @@
       "name_en": "Coping Stances",
       "layer": "coping",
       "cards": [
-        { "id": "cop_01", "deck_id": "coping", "layer": "coping", "question_th": "คุณรับมือกับความกดดันนั้นอย่างไร?", "question_en": "How did you cope with that pressure?" },
-        { "id": "cop_02", "deck_id": "coping", "layer": "coping", "question_th": "เมื่อรู้สึกไม่ปลอดภัย คุณมักจะทำอะไร?", "question_en": "When you feel unsafe, what do you tend to do?" },
-        { "id": "cop_03", "deck_id": "coping", "layer": "coping", "question_th": "คุณปกป้องตัวเองจากความเจ็บปวดด้วยวิธีอะไร?", "question_en": "How do you protect yourself from pain?" },
-        { "id": "cop_04", "deck_id": "coping", "layer": "coping", "question_th": "ท่าทางที่คุณใช้บ่อยที่สุดในความสัมพันธ์คืออะไร?", "question_en": "What stance do you use most often in relationships?" },
-        { "id": "cop_05", "deck_id": "coping", "layer": "coping", "question_th": "คุณยอมหรือต่อต้านเมื่อเผชิญกับความขัดแย้ง?", "question_en": "Do you yield or resist when facing conflict?" },
-        { "id": "cop_06", "deck_id": "coping", "layer": "coping", "question_th": "วิธีรับมือของคุณช่วยให้คุณเชื่อมต่อหรือตัดขาดจากผู้อื่น?", "question_en": "Does your coping connect or disconnect you from others?" },
-        { "id": "cop_07", "deck_id": "coping", "layer": "coping", "question_th": "คุณเคยสังเกตท่าทางนี้มาจากใครในชีวิตคุณไหม?", "question_en": "Have you noticed this stance from someone in your life?" },
-        { "id": "cop_08", "deck_id": "coping", "layer": "coping", "question_th": "มีสถานการณ์ที่คุณรับมือได้อย่างสอดคล้องกับตัวเองไหม?", "question_en": "Is there a situation where you coped congruently with yourself?" },
-        { "id": "cop_09", "deck_id": "coping", "layer": "coping", "question_th": "ท่าทางนี้เคยช่วยคุณในอดีตอย่างไร?", "question_en": "How did this stance once help you in the past?" },
-        { "id": "cop_10", "deck_id": "coping", "layer": "coping", "question_th": "อะไรทำให้คุณเลือกท่าทางนี้โดยอัตโนมัติ?", "question_en": "What triggers you to adopt this stance automatically?" }
+        {
+          "id": "cop_01",
+          "deck_id": "coping",
+          "layer": "coping",
+          "question_th": "คุณรับมือกับความกดดันนั้นอย่างไร?",
+          "question_en": "How did you cope with that pressure?"
+        },
+        {
+          "id": "cop_02",
+          "deck_id": "coping",
+          "layer": "coping",
+          "question_th": "เมื่อรู้สึกไม่ปลอดภัย คุณมักจะทำอะไร?",
+          "question_en": "When you feel unsafe, what do you tend to do?"
+        },
+        {
+          "id": "cop_03",
+          "deck_id": "coping",
+          "layer": "coping",
+          "question_th": "คุณปกป้องตัวเองจากความเจ็บปวดด้วยวิธีอะไร?",
+          "question_en": "How do you protect yourself from pain?"
+        },
+        {
+          "id": "cop_04",
+          "deck_id": "coping",
+          "layer": "coping",
+          "question_th": "ท่าทางที่คุณใช้บ่อยที่สุดในความสัมพันธ์คืออะไร?",
+          "question_en": "What stance do you use most often in relationships?"
+        },
+        {
+          "id": "cop_05",
+          "deck_id": "coping",
+          "layer": "coping",
+          "question_th": "คุณยอมหรือต่อต้านเมื่อเผชิญกับความขัดแย้ง?",
+          "question_en": "Do you yield or resist when facing conflict?"
+        },
+        {
+          "id": "cop_06",
+          "deck_id": "coping",
+          "layer": "coping",
+          "question_th": "วิธีรับมือของคุณช่วยให้คุณเชื่อมต่อหรือตัดขาดจากผู้อื่น?",
+          "question_en": "Does your coping connect or disconnect you from others?"
+        },
+        {
+          "id": "cop_07",
+          "deck_id": "coping",
+          "layer": "coping",
+          "question_th": "คุณเคยสังเกตท่าทางนี้มาจากใครในชีวิตคุณไหม?",
+          "question_en": "Have you noticed this stance from someone in your life?"
+        },
+        {
+          "id": "cop_08",
+          "deck_id": "coping",
+          "layer": "coping",
+          "question_th": "มีสถานการณ์ที่คุณรับมือได้อย่างสอดคล้องกับตัวเองไหม?",
+          "question_en": "Is there a situation where you coped congruently with yourself?"
+        },
+        {
+          "id": "cop_09",
+          "deck_id": "coping",
+          "layer": "coping",
+          "question_th": "ท่าทางนี้เคยช่วยคุณในอดีตอย่างไร?",
+          "question_en": "How did this stance once help you in the past?"
+        },
+        {
+          "id": "cop_10",
+          "deck_id": "coping",
+          "layer": "coping",
+          "question_th": "อะไรทำให้คุณเลือกท่าทางนี้โดยอัตโนมัติ?",
+          "question_en": "What triggers you to adopt this stance automatically?"
+        }
       ]
     },
     {
@@ -76,16 +296,76 @@
       "name_en": "Feelings",
       "layer": "feelings",
       "cards": [
-        { "id": "fee_01", "deck_id": "feelings", "layer": "feelings", "question_th": "คุณรู้สึกอะไรในสถานการณ์นั้นจริงๆ?", "question_en": "What did you truly feel in that situation?" },
-        { "id": "fee_02", "deck_id": "feelings", "layer": "feelings", "question_th": "ความรู้สึกนั้นอยู่ที่ส่วนไหนของร่างกายคุณ?", "question_en": "Where in your body does that feeling live?" },
-        { "id": "fee_03", "deck_id": "feelings", "layer": "feelings", "question_th": "ความรู้สึกนั้นมีสีหรือรูปทรงอะไรไหม?", "question_en": "Does that feeling have a color or shape?" },
-        { "id": "fee_04", "deck_id": "feelings", "layer": "feelings", "question_th": "คุณรู้สึกแบบนี้บ่อยแค่ไหน?", "question_en": "How often do you feel this way?" },
-        { "id": "fee_05", "deck_id": "feelings", "layer": "feelings", "question_th": "มีความรู้สึกอื่นซ่อนอยู่ใต้ความรู้สึกนี้ไหม?", "question_en": "Is there another feeling hiding beneath this one?" },
-        { "id": "fee_06", "deck_id": "feelings", "layer": "feelings", "question_th": "คุณรู้สึกสบายใจที่จะรับรู้ความรู้สึกนี้ไหม?", "question_en": "Are you comfortable acknowledging this feeling?" },
-        { "id": "fee_07", "deck_id": "feelings", "layer": "feelings", "question_th": "ความรู้สึกนั้นบอกอะไรคุณบ้าง?", "question_en": "What is that feeling telling you?" },
-        { "id": "fee_08", "deck_id": "feelings", "layer": "feelings", "question_th": "ถ้าให้ความรู้สึกนี้พูด มันจะพูดว่าอะไร?", "question_en": "If this feeling could speak, what would it say?" },
-        { "id": "fee_09", "deck_id": "feelings", "layer": "feelings", "question_th": "คุณเคยรู้สึกแบบนี้ครั้งแรกเมื่อไหร่?", "question_en": "When did you first feel this way?" },
-        { "id": "fee_10", "deck_id": "feelings", "layer": "feelings", "question_th": "ความรู้สึกนี้ต้องการอะไรจากคุณ?", "question_en": "What does this feeling need from you?" }
+        {
+          "id": "fee_01",
+          "deck_id": "feelings",
+          "layer": "feelings",
+          "question_th": "คุณรู้สึกอะไรในสถานการณ์นั้นจริงๆ?",
+          "question_en": "What did you truly feel in that situation?"
+        },
+        {
+          "id": "fee_02",
+          "deck_id": "feelings",
+          "layer": "feelings",
+          "question_th": "ความรู้สึกนั้นอยู่ที่ส่วนไหนของร่างกายคุณ?",
+          "question_en": "Where in your body does that feeling live?"
+        },
+        {
+          "id": "fee_03",
+          "deck_id": "feelings",
+          "layer": "feelings",
+          "question_th": "ความรู้สึกนั้นมีสีหรือรูปทรงอะไรไหม?",
+          "question_en": "Does that feeling have a color or shape?"
+        },
+        {
+          "id": "fee_04",
+          "deck_id": "feelings",
+          "layer": "feelings",
+          "question_th": "คุณรู้สึกแบบนี้บ่อยแค่ไหน?",
+          "question_en": "How often do you feel this way?"
+        },
+        {
+          "id": "fee_05",
+          "deck_id": "feelings",
+          "layer": "feelings",
+          "question_th": "มีความรู้สึกอื่นซ่อนอยู่ใต้ความรู้สึกนี้ไหม?",
+          "question_en": "Is there another feeling hiding beneath this one?"
+        },
+        {
+          "id": "fee_06",
+          "deck_id": "feelings",
+          "layer": "feelings",
+          "question_th": "คุณรู้สึกสบายใจที่จะรับรู้ความรู้สึกนี้ไหม?",
+          "question_en": "Are you comfortable acknowledging this feeling?"
+        },
+        {
+          "id": "fee_07",
+          "deck_id": "feelings",
+          "layer": "feelings",
+          "question_th": "ความรู้สึกนั้นบอกอะไรคุณบ้าง?",
+          "question_en": "What is that feeling telling you?"
+        },
+        {
+          "id": "fee_08",
+          "deck_id": "feelings",
+          "layer": "feelings",
+          "question_th": "ถ้าให้ความรู้สึกนี้พูด มันจะพูดว่าอะไร?",
+          "question_en": "If this feeling could speak, what would it say?"
+        },
+        {
+          "id": "fee_09",
+          "deck_id": "feelings",
+          "layer": "feelings",
+          "question_th": "คุณเคยรู้สึกแบบนี้ครั้งแรกเมื่อไหร่?",
+          "question_en": "When did you first feel this way?"
+        },
+        {
+          "id": "fee_10",
+          "deck_id": "feelings",
+          "layer": "feelings",
+          "question_th": "ความรู้สึกนี้ต้องการอะไรจากคุณ?",
+          "question_en": "What does this feeling need from you?"
+        }
       ]
     },
     {
@@ -94,16 +374,76 @@
       "name_en": "Feelings About Feelings",
       "layer": "feelings_about_feelings",
       "cards": [
-        { "id": "faf_01", "deck_id": "feelings_about_feelings", "layer": "feelings_about_feelings", "question_th": "คุณรู้สึกอย่างไรกับความรู้สึกที่คุณมี?", "question_en": "How do you feel about having this feeling?" },
-        { "id": "faf_02", "deck_id": "feelings_about_feelings", "layer": "feelings_about_feelings", "question_th": "มีความรู้สึกที่คุณรู้สึกว่า 'ไม่ควรรู้สึก' ไหม?", "question_en": "Is there a feeling you believe you 'shouldn't' have?" },
-        { "id": "faf_03", "deck_id": "feelings_about_feelings", "layer": "feelings_about_feelings", "question_th": "ความรู้สึกนี้ทำให้คุณรู้สึกอับอายหรือภูมิใจ?", "question_en": "Does this feeling make you feel ashamed or proud?" },
-        { "id": "faf_04", "deck_id": "feelings_about_feelings", "layer": "feelings_about_feelings", "question_th": "คุณพิพากษาตัวเองเพราะความรู้สึกนี้ไหม?", "question_en": "Do you judge yourself for having this feeling?" },
-        { "id": "faf_05", "deck_id": "feelings_about_feelings", "layer": "feelings_about_feelings", "question_th": "ความรู้สึกนี้ทำให้คุณรู้สึกอ่อนแอหรือแข็งแกร่ง?", "question_en": "Does this feeling make you feel weak or strong?" },
-        { "id": "faf_06", "deck_id": "feelings_about_feelings", "layer": "feelings_about_feelings", "question_th": "คุณยอมรับความรู้สึกนี้ได้ไหม?", "question_en": "Can you accept this feeling as it is?" },
-        { "id": "faf_07", "deck_id": "feelings_about_feelings", "layer": "feelings_about_feelings", "question_th": "ใครในชีวิตคุณที่ยอมรับความรู้สึกประเภทนี้?", "question_en": "Who in your life accepts feelings like this?" },
-        { "id": "faf_08", "deck_id": "feelings_about_feelings", "layer": "feelings_about_feelings", "question_th": "คุณได้รับอนุญาตให้รู้สึกแบบนี้ไหม?", "question_en": "Do you give yourself permission to feel this?" },
-        { "id": "faf_09", "deck_id": "feelings_about_feelings", "layer": "feelings_about_feelings", "question_th": "ถ้าไม่มีการพิพากษา คุณจะรู้สึกอะไร?", "question_en": "Without judgment, what would you feel?" },
-        { "id": "faf_10", "deck_id": "feelings_about_feelings", "layer": "feelings_about_feelings", "question_th": "ความรู้สึกนี้ขัดแย้งกับภาพลักษณ์ที่คุณมีต่อตัวเองไหม?", "question_en": "Does this feeling conflict with the image you have of yourself?" }
+        {
+          "id": "faf_01",
+          "deck_id": "feelings_about_feelings",
+          "layer": "feelings_about_feelings",
+          "question_th": "คุณรู้สึกอย่างไรกับความรู้สึกที่คุณมี?",
+          "question_en": "How do you feel about having this feeling?"
+        },
+        {
+          "id": "faf_02",
+          "deck_id": "feelings_about_feelings",
+          "layer": "feelings_about_feelings",
+          "question_th": "มีความรู้สึกที่คุณรู้สึกว่า 'ไม่ควรรู้สึก' ไหม?",
+          "question_en": "Is there a feeling you believe you 'shouldn't' have?"
+        },
+        {
+          "id": "faf_03",
+          "deck_id": "feelings_about_feelings",
+          "layer": "feelings_about_feelings",
+          "question_th": "ความรู้สึกนี้ทำให้คุณรู้สึกอับอายหรือภูมิใจ?",
+          "question_en": "Does this feeling make you feel ashamed or proud?"
+        },
+        {
+          "id": "faf_04",
+          "deck_id": "feelings_about_feelings",
+          "layer": "feelings_about_feelings",
+          "question_th": "คุณพิพากษาตัวเองเพราะความรู้สึกนี้ไหม?",
+          "question_en": "Do you judge yourself for having this feeling?"
+        },
+        {
+          "id": "faf_05",
+          "deck_id": "feelings_about_feelings",
+          "layer": "feelings_about_feelings",
+          "question_th": "ความรู้สึกนี้ทำให้คุณรู้สึกอ่อนแอหรือแข็งแกร่ง?",
+          "question_en": "Does this feeling make you feel weak or strong?"
+        },
+        {
+          "id": "faf_06",
+          "deck_id": "feelings_about_feelings",
+          "layer": "feelings_about_feelings",
+          "question_th": "คุณยอมรับความรู้สึกนี้ได้ไหม?",
+          "question_en": "Can you accept this feeling as it is?"
+        },
+        {
+          "id": "faf_07",
+          "deck_id": "feelings_about_feelings",
+          "layer": "feelings_about_feelings",
+          "question_th": "ใครในชีวิตคุณที่ยอมรับความรู้สึกประเภทนี้?",
+          "question_en": "Who in your life accepts feelings like this?"
+        },
+        {
+          "id": "faf_08",
+          "deck_id": "feelings_about_feelings",
+          "layer": "feelings_about_feelings",
+          "question_th": "คุณได้รับอนุญาตให้รู้สึกแบบนี้ไหม?",
+          "question_en": "Do you give yourself permission to feel this?"
+        },
+        {
+          "id": "faf_09",
+          "deck_id": "feelings_about_feelings",
+          "layer": "feelings_about_feelings",
+          "question_th": "ถ้าไม่มีการพิพากษา คุณจะรู้สึกอะไร?",
+          "question_en": "Without judgment, what would you feel?"
+        },
+        {
+          "id": "faf_10",
+          "deck_id": "feelings_about_feelings",
+          "layer": "feelings_about_feelings",
+          "question_th": "ความรู้สึกนี้ขัดแย้งกับภาพลักษณ์ที่คุณมีต่อตัวเองไหม?",
+          "question_en": "Does this feeling conflict with the image you have of yourself?"
+        }
       ]
     },
     {
@@ -112,16 +452,76 @@
       "name_en": "Perceptions",
       "layer": "perceptions",
       "cards": [
-        { "id": "per_01", "deck_id": "perceptions", "layer": "perceptions", "question_th": "คุณตีความสถานการณ์นั้นว่าอะไร?", "question_en": "How did you interpret that situation?" },
-        { "id": "per_02", "deck_id": "perceptions", "layer": "perceptions", "question_th": "คุณเชื่อว่าสิ่งที่เกิดขึ้นมีความหมายว่าอะไรเกี่ยวกับตัวคุณ?", "question_en": "What did you believe this situation meant about you?" },
-        { "id": "per_03", "deck_id": "perceptions", "layer": "perceptions", "question_th": "มีความคิดอะไรที่วนเวียนในหัวเมื่อเผชิญกับสิ่งนี้?", "question_en": "What thoughts circled in your mind when facing this?" },
-        { "id": "per_04", "deck_id": "perceptions", "layer": "perceptions", "question_th": "คุณมองคนอื่นในสถานการณ์นั้นอย่างไร?", "question_en": "How did you see the other people in that situation?" },
-        { "id": "per_05", "deck_id": "perceptions", "layer": "perceptions", "question_th": "เรื่องราวที่คุณเล่าให้ตัวเองฟังเกี่ยวกับเหตุการณ์นี้คืออะไร?", "question_en": "What story did you tell yourself about this event?" },
-        { "id": "per_06", "deck_id": "perceptions", "layer": "perceptions", "question_th": "มีมุมมองอื่นที่เป็นไปได้ไหมที่คุณยังไม่เคยลองมอง?", "question_en": "Is there another possible perspective you haven't tried?" },
-        { "id": "per_07", "deck_id": "perceptions", "layer": "perceptions", "question_th": "การรับรู้ของคุณมาจากประสบการณ์ไหนในอดีต?", "question_en": "Which past experience does your perception come from?" },
-        { "id": "per_08", "deck_id": "perceptions", "layer": "perceptions", "question_th": "คุณแน่ใจแค่ไหนว่าสิ่งที่คุณเชื่อนั้นเป็นความจริง?", "question_en": "How certain are you that what you believe is true?" },
-        { "id": "per_09", "deck_id": "perceptions", "layer": "perceptions", "question_th": "ความคิดอะไรที่ทำให้คุณรู้สึกติดขัด?", "question_en": "What thought makes you feel stuck?" },
-        { "id": "per_10", "deck_id": "perceptions", "layer": "perceptions", "question_th": "ถ้าคุณเปลี่ยนการรับรู้นี้ ชีวิตจะเปลี่ยนไปอย่างไร?", "question_en": "If you changed this perception, how might life shift?" }
+        {
+          "id": "per_01",
+          "deck_id": "perceptions",
+          "layer": "perceptions",
+          "question_th": "คุณตีความสถานการณ์นั้นว่าอะไร?",
+          "question_en": "How did you interpret that situation?"
+        },
+        {
+          "id": "per_02",
+          "deck_id": "perceptions",
+          "layer": "perceptions",
+          "question_th": "คุณเชื่อว่าสิ่งที่เกิดขึ้นมีความหมายว่าอะไรเกี่ยวกับตัวคุณ?",
+          "question_en": "What did you believe this situation meant about you?"
+        },
+        {
+          "id": "per_03",
+          "deck_id": "perceptions",
+          "layer": "perceptions",
+          "question_th": "มีความคิดอะไรที่วนเวียนในหัวเมื่อเผชิญกับสิ่งนี้?",
+          "question_en": "What thoughts circled in your mind when facing this?"
+        },
+        {
+          "id": "per_04",
+          "deck_id": "perceptions",
+          "layer": "perceptions",
+          "question_th": "คุณมองคนอื่นในสถานการณ์นั้นอย่างไร?",
+          "question_en": "How did you see the other people in that situation?"
+        },
+        {
+          "id": "per_05",
+          "deck_id": "perceptions",
+          "layer": "perceptions",
+          "question_th": "เรื่องราวที่คุณเล่าให้ตัวเองฟังเกี่ยวกับเหตุการณ์นี้คืออะไร?",
+          "question_en": "What story did you tell yourself about this event?"
+        },
+        {
+          "id": "per_06",
+          "deck_id": "perceptions",
+          "layer": "perceptions",
+          "question_th": "มีมุมมองอื่นที่เป็นไปได้ไหมที่คุณยังไม่เคยลองมอง?",
+          "question_en": "Is there another possible perspective you haven't tried?"
+        },
+        {
+          "id": "per_07",
+          "deck_id": "perceptions",
+          "layer": "perceptions",
+          "question_th": "การรับรู้ของคุณมาจากประสบการณ์ไหนในอดีต?",
+          "question_en": "Which past experience does your perception come from?"
+        },
+        {
+          "id": "per_08",
+          "deck_id": "perceptions",
+          "layer": "perceptions",
+          "question_th": "คุณแน่ใจแค่ไหนว่าสิ่งที่คุณเชื่อนั้นเป็นความจริง?",
+          "question_en": "How certain are you that what you believe is true?"
+        },
+        {
+          "id": "per_09",
+          "deck_id": "perceptions",
+          "layer": "perceptions",
+          "question_th": "ความคิดอะไรที่ทำให้คุณรู้สึกติดขัด?",
+          "question_en": "What thought makes you feel stuck?"
+        },
+        {
+          "id": "per_10",
+          "deck_id": "perceptions",
+          "layer": "perceptions",
+          "question_th": "ถ้าคุณเปลี่ยนการรับรู้นี้ ชีวิตจะเปลี่ยนไปอย่างไร?",
+          "question_en": "If you changed this perception, how might life shift?"
+        }
       ]
     },
     {
@@ -130,16 +530,76 @@
       "name_en": "Expectations",
       "layer": "expectations",
       "cards": [
-        { "id": "exp_01", "deck_id": "expectations", "layer": "expectations", "question_th": "คุณคาดหวังอะไรจากสถานการณ์นั้น?", "question_en": "What did you expect from that situation?" },
-        { "id": "exp_02", "deck_id": "expectations", "layer": "expectations", "question_th": "คุณคาดหวังอะไรจากตัวเองในสถานการณ์นั้น?", "question_en": "What did you expect of yourself in that situation?" },
-        { "id": "exp_03", "deck_id": "expectations", "layer": "expectations", "question_th": "ความคาดหวังนี้มาจากไหน?", "question_en": "Where does this expectation come from?" },
-        { "id": "exp_04", "deck_id": "expectations", "layer": "expectations", "question_th": "คุณคาดหวังอะไรจากคนอื่นที่ไม่ได้รับ?", "question_en": "What did you expect from others that you didn't receive?" },
-        { "id": "exp_05", "deck_id": "expectations", "layer": "expectations", "question_th": "ความคาดหวังนี้เป็นของคุณจริงๆ หรือรับมาจากคนอื่น?", "question_en": "Is this expectation truly yours, or borrowed from others?" },
-        { "id": "exp_06", "deck_id": "expectations", "layer": "expectations", "question_th": "ความคาดหวังที่ไม่ได้รับนั้นทำให้คุณรู้สึกอย่างไร?", "question_en": "How does an unmet expectation make you feel?" },
-        { "id": "exp_07", "deck_id": "expectations", "layer": "expectations", "question_th": "คุณเคยบอกคนอื่นเกี่ยวกับความคาดหวังของคุณไหม?", "question_en": "Have you ever told others about your expectations?" },
-        { "id": "exp_08", "deck_id": "expectations", "layer": "expectations", "question_th": "ความคาดหวังนี้สมเหตุสมผลไหมในมุมมองปัจจุบัน?", "question_en": "Is this expectation reasonable from your current perspective?" },
-        { "id": "exp_09", "deck_id": "expectations", "layer": "expectations", "question_th": "มีความคาดหวังที่คุณยึดถือมานานแต่ยังไม่เคยตั้งคำถาม?", "question_en": "Is there an expectation you've held long but never questioned?" },
-        { "id": "exp_10", "deck_id": "expectations", "layer": "expectations", "question_th": "ถ้าคุณปล่อยวางความคาดหวังนี้ จะรู้สึกอย่างไร?", "question_en": "How would it feel to release this expectation?" }
+        {
+          "id": "exp_01",
+          "deck_id": "expectations",
+          "layer": "expectations",
+          "question_th": "คุณคาดหวังอะไรจากสถานการณ์นั้น?",
+          "question_en": "What did you expect from that situation?"
+        },
+        {
+          "id": "exp_02",
+          "deck_id": "expectations",
+          "layer": "expectations",
+          "question_th": "คุณคาดหวังอะไรจากตัวเองในสถานการณ์นั้น?",
+          "question_en": "What did you expect of yourself in that situation?"
+        },
+        {
+          "id": "exp_03",
+          "deck_id": "expectations",
+          "layer": "expectations",
+          "question_th": "ความคาดหวังนี้มาจากไหน?",
+          "question_en": "Where does this expectation come from?"
+        },
+        {
+          "id": "exp_04",
+          "deck_id": "expectations",
+          "layer": "expectations",
+          "question_th": "คุณคาดหวังอะไรจากคนอื่นที่ไม่ได้รับ?",
+          "question_en": "What did you expect from others that you didn't receive?"
+        },
+        {
+          "id": "exp_05",
+          "deck_id": "expectations",
+          "layer": "expectations",
+          "question_th": "ความคาดหวังนี้เป็นของคุณจริงๆ หรือรับมาจากคนอื่น?",
+          "question_en": "Is this expectation truly yours, or borrowed from others?"
+        },
+        {
+          "id": "exp_06",
+          "deck_id": "expectations",
+          "layer": "expectations",
+          "question_th": "ความคาดหวังที่ไม่ได้รับนั้นทำให้คุณรู้สึกอย่างไร?",
+          "question_en": "How does an unmet expectation make you feel?"
+        },
+        {
+          "id": "exp_07",
+          "deck_id": "expectations",
+          "layer": "expectations",
+          "question_th": "คุณเคยบอกคนอื่นเกี่ยวกับความคาดหวังของคุณไหม?",
+          "question_en": "Have you ever told others about your expectations?"
+        },
+        {
+          "id": "exp_08",
+          "deck_id": "expectations",
+          "layer": "expectations",
+          "question_th": "ความคาดหวังนี้สมเหตุสมผลไหมในมุมมองปัจจุบัน?",
+          "question_en": "Is this expectation reasonable from your current perspective?"
+        },
+        {
+          "id": "exp_09",
+          "deck_id": "expectations",
+          "layer": "expectations",
+          "question_th": "มีความคาดหวังที่คุณยึดถือมานานแต่ยังไม่เคยตั้งคำถาม?",
+          "question_en": "Is there an expectation you've held long but never questioned?"
+        },
+        {
+          "id": "exp_10",
+          "deck_id": "expectations",
+          "layer": "expectations",
+          "question_th": "ถ้าคุณปล่อยวางความคาดหวังนี้ จะรู้สึกอย่างไร?",
+          "question_en": "How would it feel to release this expectation?"
+        }
       ]
     },
     {
@@ -148,16 +608,76 @@
       "name_en": "Yearnings",
       "layer": "yearnings",
       "cards": [
-        { "id": "yea_01", "deck_id": "yearnings", "layer": "yearnings", "question_th": "ลึกๆ แล้วคุณต้องการอะไรจริงๆ?", "question_en": "Deep down, what do you truly need?" },
-        { "id": "yea_02", "deck_id": "yearnings", "layer": "yearnings", "question_th": "คุณปรารถนาที่จะได้รับการรับรู้ในแบบไหน?", "question_en": "In what way do you yearn to be seen?" },
-        { "id": "yea_03", "deck_id": "yearnings", "layer": "yearnings", "question_th": "ความรักและการเป็นที่ยอมรับหมายความว่าอะไรสำหรับคุณ?", "question_en": "What does love and acceptance mean to you?" },
-        { "id": "yea_04", "deck_id": "yearnings", "layer": "yearnings", "question_th": "คุณปรารถนาที่จะเชื่อมต่อกับใครหรืออะไร?", "question_en": "Who or what do you yearn to connect with?" },
-        { "id": "yea_05", "deck_id": "yearnings", "layer": "yearnings", "question_th": "ความปรารถนานี้อยู่กับคุณมานานแค่ไหน?", "question_en": "How long has this yearning been with you?" },
-        { "id": "yea_06", "deck_id": "yearnings", "layer": "yearnings", "question_th": "มีส่วนหนึ่งในตัวคุณที่ปรารถนาที่จะได้ยิน 'ฉันรักเธอ' ไหม?", "question_en": "Is there a part of you yearning to hear 'I love you'?" },
-        { "id": "yea_07", "deck_id": "yearnings", "layer": "yearnings", "question_th": "คุณปรารถนาสันติภาพภายในแบบไหน?", "question_en": "What kind of inner peace do you yearn for?" },
-        { "id": "yea_08", "deck_id": "yearnings", "layer": "yearnings", "question_th": "ความปรารถนานี้เชื่อมโยงกับบาดแผลเก่าๆ ไหม?", "question_en": "Does this yearning connect to an old wound?" },
-        { "id": "yea_09", "deck_id": "yearnings", "layer": "yearnings", "question_th": "คุณเคยได้รับสิ่งที่ปรารถนานี้บ้างไหม? รู้สึกอย่างไร?", "question_en": "Have you ever received what you yearn for? How did it feel?" },
-        { "id": "yea_10", "deck_id": "yearnings", "layer": "yearnings", "question_th": "คุณสามารถให้สิ่งที่คุณปรารถนาแก่ตัวเองได้ไหม?", "question_en": "Can you give yourself what you yearn for?" }
+        {
+          "id": "yea_01",
+          "deck_id": "yearnings",
+          "layer": "yearnings",
+          "question_th": "ลึกๆ แล้วคุณต้องการอะไรจริงๆ?",
+          "question_en": "Deep down, what do you truly need?"
+        },
+        {
+          "id": "yea_02",
+          "deck_id": "yearnings",
+          "layer": "yearnings",
+          "question_th": "คุณปรารถนาที่จะได้รับการรับรู้ในแบบไหน?",
+          "question_en": "In what way do you yearn to be seen?"
+        },
+        {
+          "id": "yea_03",
+          "deck_id": "yearnings",
+          "layer": "yearnings",
+          "question_th": "ความรักและการเป็นที่ยอมรับหมายความว่าอะไรสำหรับคุณ?",
+          "question_en": "What does love and acceptance mean to you?"
+        },
+        {
+          "id": "yea_04",
+          "deck_id": "yearnings",
+          "layer": "yearnings",
+          "question_th": "คุณปรารถนาที่จะเชื่อมต่อกับใครหรืออะไร?",
+          "question_en": "Who or what do you yearn to connect with?"
+        },
+        {
+          "id": "yea_05",
+          "deck_id": "yearnings",
+          "layer": "yearnings",
+          "question_th": "ความปรารถนานี้อยู่กับคุณมานานแค่ไหน?",
+          "question_en": "How long has this yearning been with you?"
+        },
+        {
+          "id": "yea_06",
+          "deck_id": "yearnings",
+          "layer": "yearnings",
+          "question_th": "มีส่วนหนึ่งในตัวคุณที่ปรารถนาที่จะได้ยิน 'ฉันรักเธอ' ไหม?",
+          "question_en": "Is there a part of you yearning to hear 'I love you'?"
+        },
+        {
+          "id": "yea_07",
+          "deck_id": "yearnings",
+          "layer": "yearnings",
+          "question_th": "คุณปรารถนาสันติภาพภายในแบบไหน?",
+          "question_en": "What kind of inner peace do you yearn for?"
+        },
+        {
+          "id": "yea_08",
+          "deck_id": "yearnings",
+          "layer": "yearnings",
+          "question_th": "ความปรารถนานี้เชื่อมโยงกับบาดแผลเก่าๆ ไหม?",
+          "question_en": "Does this yearning connect to an old wound?"
+        },
+        {
+          "id": "yea_09",
+          "deck_id": "yearnings",
+          "layer": "yearnings",
+          "question_th": "คุณเคยได้รับสิ่งที่ปรารถนานี้บ้างไหม? รู้สึกอย่างไร?",
+          "question_en": "Have you ever received what you yearn for? How did it feel?"
+        },
+        {
+          "id": "yea_10",
+          "deck_id": "yearnings",
+          "layer": "yearnings",
+          "question_th": "คุณสามารถให้สิ่งที่คุณปรารถนาแก่ตัวเองได้ไหม?",
+          "question_en": "Can you give yourself what you yearn for?"
+        }
       ]
     },
     {
@@ -166,16 +686,76 @@
       "name_en": "Self / Life Force",
       "layer": "self",
       "cards": [
-        { "id": "sel_01", "deck_id": "self", "layer": "self", "question_th": "คุณเชื่อมั่นในคุณค่าของตัวเองแค่ไหน?", "question_en": "How much do you believe in your own worth?" },
-        { "id": "sel_02", "deck_id": "self", "layer": "self", "question_th": "มีส่วนใดในตัวคุณที่คุณยังไม่ยอมรับ?", "question_en": "Is there a part of yourself you haven't yet accepted?" },
-        { "id": "sel_03", "deck_id": "self", "layer": "self", "question_th": "คุณสูญเสียตัวเองไปในสถานการณ์นั้นได้อย่างไร?", "question_en": "How did you lose yourself in that situation?" },
-        { "id": "sel_04", "deck_id": "self", "layer": "self", "question_th": "ตัวตนแท้จริงของคุณต้องการพูดอะไรในตอนนั้น?", "question_en": "What did your true self want to say in that moment?" },
-        { "id": "sel_05", "deck_id": "self", "layer": "self", "question_th": "คุณรู้สึกว่าตัวเองมีคุณค่าในตัวเองโดยไม่มีเงื่อนไขไหม?", "question_en": "Do you feel worthy simply for being who you are?" },
-        { "id": "sel_06", "deck_id": "self", "layer": "self", "question_th": "คุณไว้วางใจตัวเองได้แค่ไหน?", "question_en": "How much do you trust yourself?" },
-        { "id": "sel_07", "deck_id": "self", "layer": "self", "question_th": "มีส่วนใดในตัวคุณที่คุณรู้สึกภูมิใจ?", "question_en": "Is there a part of you that you feel proud of?" },
-        { "id": "sel_08", "deck_id": "self", "layer": "self", "question_th": "คุณเชื่อมต่อกับพลังชีวิตภายในตัวเองได้อย่างไร?", "question_en": "How do you connect to the life force within you?" },
-        { "id": "sel_09", "deck_id": "self", "layer": "self", "question_th": "ถ้าคุณรักตัวเองอย่างสมบูรณ์ คุณจะทำอะไรแตกต่างไป?", "question_en": "If you loved yourself fully, what would you do differently?" },
-        { "id": "sel_10", "deck_id": "self", "layer": "self", "question_th": "คุณสมควรได้รับความรักและความเข้าใจไหม?", "question_en": "Do you deserve love and understanding?" }
+        {
+          "id": "sel_01",
+          "deck_id": "self",
+          "layer": "self",
+          "question_th": "คุณเชื่อมั่นในคุณค่าของตัวเองแค่ไหน?",
+          "question_en": "How much do you believe in your own worth?"
+        },
+        {
+          "id": "sel_02",
+          "deck_id": "self",
+          "layer": "self",
+          "question_th": "มีส่วนใดในตัวคุณที่คุณยังไม่ยอมรับ?",
+          "question_en": "Is there a part of yourself you haven't yet accepted?"
+        },
+        {
+          "id": "sel_03",
+          "deck_id": "self",
+          "layer": "self",
+          "question_th": "คุณสูญเสียตัวเองไปในสถานการณ์นั้นได้อย่างไร?",
+          "question_en": "How did you lose yourself in that situation?"
+        },
+        {
+          "id": "sel_04",
+          "deck_id": "self",
+          "layer": "self",
+          "question_th": "ตัวตนแท้จริงของคุณต้องการพูดอะไรในตอนนั้น?",
+          "question_en": "What did your true self want to say in that moment?"
+        },
+        {
+          "id": "sel_05",
+          "deck_id": "self",
+          "layer": "self",
+          "question_th": "คุณรู้สึกว่าตัวเองมีคุณค่าในตัวเองโดยไม่มีเงื่อนไขไหม?",
+          "question_en": "Do you feel worthy simply for being who you are?"
+        },
+        {
+          "id": "sel_06",
+          "deck_id": "self",
+          "layer": "self",
+          "question_th": "คุณไว้วางใจตัวเองได้แค่ไหน?",
+          "question_en": "How much do you trust yourself?"
+        },
+        {
+          "id": "sel_07",
+          "deck_id": "self",
+          "layer": "self",
+          "question_th": "มีส่วนใดในตัวคุณที่คุณรู้สึกภูมิใจ?",
+          "question_en": "Is there a part of you that you feel proud of?"
+        },
+        {
+          "id": "sel_08",
+          "deck_id": "self",
+          "layer": "self",
+          "question_th": "คุณเชื่อมต่อกับพลังชีวิตภายในตัวเองได้อย่างไร?",
+          "question_en": "How do you connect to the life force within you?"
+        },
+        {
+          "id": "sel_09",
+          "deck_id": "self",
+          "layer": "self",
+          "question_th": "ถ้าคุณรักตัวเองอย่างสมบูรณ์ คุณจะทำอะไรแตกต่างไป?",
+          "question_en": "If you loved yourself fully, what would you do differently?"
+        },
+        {
+          "id": "sel_10",
+          "deck_id": "self",
+          "layer": "self",
+          "question_th": "คุณสมควรได้รับความรักและความเข้าใจไหม?",
+          "question_en": "Do you deserve love and understanding?"
+        }
       ]
     },
     {
@@ -183,33 +763,194 @@
       "name_th": "ความเชื่อของซาเทียร์",
       "name_en": "Satir Beliefs",
       "cards": [
-        { "id": "sb_01", "deck_id": "satir_beliefs", "question_th": "ทุกคนมีทรัพยากรภายในที่เพียงพอสำหรับการเติบโต", "question_en": "Every person has sufficient inner resources for growth." },
-        { "id": "sb_02", "deck_id": "satir_beliefs", "question_th": "การเปลี่ยนแปลงเป็นไปได้เสมอ แม้ในขณะที่ภายนอกและสถานการณ์อาจไม่เปลี่ยน", "question_en": "Change is always possible, even when external circumstances cannot change." },
-        { "id": "sb_03", "deck_id": "satir_beliefs", "question_th": "ทุกคนต้องการความรักและการยอมรับ", "question_en": "Everyone needs love and belonging." },
-        { "id": "sb_04", "deck_id": "satir_beliefs", "question_th": "ปัญหาไม่ใช่ปัญหา วิธีที่เรารับมือกับมันต่างหากที่เป็นปัญหา", "question_en": "The problem is not the problem; the coping is the problem." },
-        { "id": "sb_05", "deck_id": "satir_beliefs", "question_th": "เราทุกคนเป็นการแสดงออกของพลังชีวิตเดียวกัน", "question_en": "We are all manifestations of the same life force." },
-        { "id": "sb_06", "deck_id": "satir_beliefs", "question_th": "สุขภาพที่ดีหมายถึงการสื่อสารอย่างสอดคล้องกับตัวเอง", "question_en": "Health means communicating congruently with yourself." },
-        { "id": "sb_07", "deck_id": "satir_beliefs", "question_th": "เรามีศักยภาพที่จะเลือกการตอบสนองที่สร้างสรรค์ได้เสมอ", "question_en": "We always have the potential to choose creative responses." },
-        { "id": "sb_08", "deck_id": "satir_beliefs", "question_th": "ความรู้สึกทุกอย่างเป็นของขวัญที่บอกเราถึงสิ่งที่เราต้องการ", "question_en": "Every feeling is a gift that tells us what we need." },
-        { "id": "sb_09", "deck_id": "satir_beliefs", "question_th": "เราเรียนรู้รูปแบบความสัมพันธ์จากครอบครัว และสามารถเปลี่ยนแปลงได้", "question_en": "We learn relationship patterns from family, and they can be changed." },
-        { "id": "sb_10", "deck_id": "satir_beliefs", "question_th": "ตัวตนของเราแยกจากพฤติกรรมของเรา — เราคือสิ่งที่ดีกว่าการกระทำของเรา", "question_en": "Our self is separate from our behavior — we are more than our actions." }
-      ]
+        {
+          "id": "sb_01",
+          "deck_id": "satir_beliefs",
+          "question_th": "มนุษย์ทุกคนมีคุณค่าในตัวเอง เพียงเพราะเขาเป็นมนุษย์",
+          "question_en": "Every human being has value simply because they are human."
+        },
+        {
+          "id": "sb_02",
+          "deck_id": "satir_beliefs",
+          "question_th": "อย่าให้การรับรู้ที่จำกัดของคนอื่น มาจำกัดคุณค่าของเรา",
+          "question_en": "Don't let someone else's limited perception define your worth."
+        },
+        {
+          "id": "sb_03",
+          "deck_id": "satir_beliefs",
+          "question_th": "ฉันคือฉัน…บนโลกใบนี้ไม่มีใครเหมือนฉันเลยสักคน",
+          "question_en": "I am me… and there is no one in the world exactly like me."
+        },
+        {
+          "id": "sb_04",
+          "deck_id": "satir_beliefs",
+          "question_th": "ของขวัญอันล้ำค่าคือการที่ใครสักคนเห็น รับฟัง และเข้าใจเราอย่างแท้จริง",
+          "question_en": "A precious gift is when someone truly sees, hears, and understands us."
+        },
+        {
+          "id": "sb_05",
+          "deck_id": "satir_beliefs",
+          "question_th": "ความรู้สึกมีคุณค่าเติบโตได้ ในสภาพแวดล้อมที่เข้าใจและเคารพความแตกต่างของแต่ละคน",
+          "question_en": "Feelings gain value in environments that respect and honor our differences."
+        },
+        {
+          "id": "sb_06",
+          "deck_id": "satir_beliefs",
+          "question_th": "คนเราทำดีที่สุดแล้วในเวลานั้น เท่าที่ความรู้ ความสามารถ และทรัพยากรที่เขามีจะเอื้อให้",
+          "question_en": "People do the best they can at the time, with the knowledge, ability, and resources they have."
+        },
+        {
+          "id": "sb_07",
+          "deck_id": "satir_beliefs",
+          "question_th": "ปัญหาไม่ใช่ปัญหา แต่เป็นวิธีรับมือกับปัญหาต่างหาก…ที่เป็นปัญหา",
+          "question_en": "The problem isn't the problem it's how we handle it that matters."
+        },
+        {
+          "id": "sb_08",
+          "deck_id": "satir_beliefs",
+          "question_th": "พฤติกรรมคือความพยายามที่ดีที่สุดของคนคนหนึ่งในการเอาตัวรอด",
+          "question_en": "Behavior is someone's best attempt at surviving."
+        },
+        {
+          "id": "sb_09",
+          "deck_id": "satir_beliefs",
+          "question_th": "ทุกพฤติกรรมล้วนมีที่มา หากเราเข้าใจบริบทของมัน",
+          "question_en": "Every behavior has a root if we understand its context, we understand its meaning."
+        },
+        {
+          "id": "sb_10",
+          "deck_id": "satir_beliefs",
+          "question_th": "ถ้าผู้คนรู้วิธีที่ดีกว่า เขาก็จะเลือกทำสิ่งที่ดีกว่า",
+          "question_en": "If people knew better, they would do better."
+        },
+        {
+          "id": "sb_11",
+          "deck_id": "satir_beliefs",
+          "question_th": "ปัญหาไม่ใช่ทางตัน แต่เป็นประตูนำไปสู่การเติบโต",
+          "question_en": "Problems aren't dead ends they're doors to growth."
+        },
+        {
+          "id": "sb_12",
+          "deck_id": "satir_beliefs",
+          "question_th": "การเปลี่ยนแปลงเป็นไปได้เสมอ",
+          "question_en": "Change is always possible."
+        },
+        {
+          "id": "sb_13",
+          "deck_id": "satir_beliefs",
+          "question_th": "สิ่งที่แน่นอนที่สุดในชีวิตคือความไม่แน่นอน (ชีวิตคือการเปลี่ยนแปลง)",
+          "question_en": "The only certainty in life is uncertainty. (Life is change.)"
+        },
+        {
+          "id": "sb_14",
+          "deck_id": "satir_beliefs",
+          "question_th": "ชีวิตไม่ได้เป็นอย่างที่ควรจะเป็น แต่มันเป็นอย่างที่มันเป็น… และสิ่งที่คุณทำกับมันต่างหากที่เปลี่ยนชีวิตได้",
+          "question_en": "Life isn't what it should be it is what it is… and how you respond is what changes your life."
+        },
+        {
+          "id": "sb_15",
+          "deck_id": "satir_beliefs",
+          "question_th": "ปัญหาคือโอกาสในการเรียนรู้และเติบโต",
+          "question_en": "Problems are opportunities for learning and growth."
+        },
+        {
+          "id": "sb_16",
+          "deck_id": "satir_beliefs",
+          "question_th": "เมื่อเราเปลี่ยนภายใน โลกภายนอกก็เปลี่ยนตามไปด้วย",
+          "question_en": "When we change within, the world around us changes too."
+        },
+        {
+          "id": "sb_17",
+          "deck_id": "satir_beliefs",
+          "question_th": "การสื่อสาร…สำคัญต่อความสัมพันธ์ เหมือนการหายใจ…สำคัญต่อชีวิต",
+          "question_en": "Communication is to relationships what breathing is to life."
+        },
+        {
+          "id": "sb_18",
+          "deck_id": "satir_beliefs",
+          "question_th": "ครอบครัวคือโลกใบเล็ก ถ้าเราเยียวยาครอบครัวได้ เราก็เยียวยาโลกได้",
+          "question_en": "The family is a small world if we heal the family, we heal the world."
+        },
+        {
+          "id": "sb_19",
+          "deck_id": "satir_beliefs",
+          "question_th": "ความรักคือพลังเยียวยาสากล",
+          "question_en": "Love is a universal healing force."
+        },
+        {
+          "id": "sb_20",
+          "deck_id": "satir_beliefs",
+          "question_th": "การเชื่อมโยงกับตัวตนที่แท้จริง คือพลังที่แท้จริงของมนุษย์",
+          "question_en": "Connecting with our true self is the source of our true power."
+        }
+      ],
+      "source": "original_cards_verbatim"
     },
     {
       "id": "helper",
       "name_th": "ผู้ช่วย (พัก)",
       "name_en": "Helper (Rest)",
       "cards": [
-        { "id": "hel_01", "deck_id": "helper", "question_th": "หายใจเข้าลึกๆ แล้วรู้สึกพื้นใต้เท้าของคุณ คุณอยู่ที่นี่และตอนนี้", "question_en": "Breathe deeply and feel the ground beneath your feet. You are here, right now." },
-        { "id": "hel_02", "deck_id": "helper", "question_th": "วางมือบนหน้าอกสักครู่ รู้สึกถึงการเต้นของหัวใจ คุณยังคงอยู่", "question_en": "Place your hand on your chest for a moment. Feel your heartbeat. You are still here." },
-        { "id": "hel_03", "deck_id": "helper", "question_th": "มองรอบๆ แล้วตั้งชื่อ 5 สิ่งที่คุณเห็น จิตใจของคุณกลับสู่ปัจจุบัน", "question_en": "Look around and name 5 things you see. Your mind is returning to the present." },
-        { "id": "hel_04", "deck_id": "helper", "question_th": "การมาถึงนี่ต้องการความกล้าหาญ ขอบคุณตัวเองสักนิดสำหรับการอยู่ที่นี่", "question_en": "Coming here takes courage. Thank yourself a little for showing up." },
-        { "id": "hel_05", "deck_id": "helper", "question_th": "คุณไม่จำเป็นต้องรู้ทุกอย่างตอนนี้ บางครั้งการแค่อยู่กับคำถามก็เพียงพอ", "question_en": "You don't need to know everything right now. Sometimes just being with the question is enough." },
-        { "id": "hel_06", "deck_id": "helper", "question_th": "ดื่มน้ำสักซิป ร่างกายของคุณมีความปรารถนาดีต่อคุณเสมอ", "question_en": "Take a sip of water. Your body is always on your side." },
-        { "id": "hel_07", "deck_id": "helper", "question_th": "ยืดแขนหรือขยับตัวสักนิด ร่างกายเป็นบ้านของคุณ", "question_en": "Stretch your arms or move a little. Your body is your home." },
-        { "id": "hel_08", "deck_id": "helper", "question_th": "คุณสามารถหยุดพักได้เมื่อใดก็ตามที่ต้องการ ไม่มีการรีบร้อนที่นี่", "question_en": "You can pause whenever you need. There is no hurry here." },
-        { "id": "hel_09", "deck_id": "helper", "question_th": "สิ่งที่คุณรู้สึกอยู่ตอนนี้มีเหตุผล คุณไม่ได้อ่อนแอ คุณแค่เป็นมนุษย์", "question_en": "What you're feeling makes sense. You're not weak. You're simply human." },
-        { "id": "hel_10", "deck_id": "helper", "question_th": "หยุดหายใจสักครู่ ไม่มีอะไรที่คุณต้องทำตอนนี้นอกจากหายใจ", "question_en": "Simply breathe for a moment. There is nothing you need to do right now except breathe." }
+        {
+          "id": "hel_01",
+          "deck_id": "helper",
+          "question_th": "หายใจเข้าลึกๆ แล้วรู้สึกพื้นใต้เท้าของคุณ คุณอยู่ที่นี่และตอนนี้",
+          "question_en": "Breathe deeply and feel the ground beneath your feet. You are here, right now."
+        },
+        {
+          "id": "hel_02",
+          "deck_id": "helper",
+          "question_th": "วางมือบนหน้าอกสักครู่ รู้สึกถึงการเต้นของหัวใจ คุณยังคงอยู่",
+          "question_en": "Place your hand on your chest for a moment. Feel your heartbeat. You are still here."
+        },
+        {
+          "id": "hel_03",
+          "deck_id": "helper",
+          "question_th": "มองรอบๆ แล้วตั้งชื่อ 5 สิ่งที่คุณเห็น จิตใจของคุณกลับสู่ปัจจุบัน",
+          "question_en": "Look around and name 5 things you see. Your mind is returning to the present."
+        },
+        {
+          "id": "hel_04",
+          "deck_id": "helper",
+          "question_th": "การมาถึงนี่ต้องการความกล้าหาญ ขอบคุณตัวเองสักนิดสำหรับการอยู่ที่นี่",
+          "question_en": "Coming here takes courage. Thank yourself a little for showing up."
+        },
+        {
+          "id": "hel_05",
+          "deck_id": "helper",
+          "question_th": "คุณไม่จำเป็นต้องรู้ทุกอย่างตอนนี้ บางครั้งการแค่อยู่กับคำถามก็เพียงพอ",
+          "question_en": "You don't need to know everything right now. Sometimes just being with the question is enough."
+        },
+        {
+          "id": "hel_06",
+          "deck_id": "helper",
+          "question_th": "ดื่มน้ำสักซิป ร่างกายของคุณมีความปรารถนาดีต่อคุณเสมอ",
+          "question_en": "Take a sip of water. Your body is always on your side."
+        },
+        {
+          "id": "hel_07",
+          "deck_id": "helper",
+          "question_th": "ยืดแขนหรือขยับตัวสักนิด ร่างกายเป็นบ้านของคุณ",
+          "question_en": "Stretch your arms or move a little. Your body is your home."
+        },
+        {
+          "id": "hel_08",
+          "deck_id": "helper",
+          "question_th": "คุณสามารถหยุดพักได้เมื่อใดก็ตามที่ต้องการ ไม่มีการรีบร้อนที่นี่",
+          "question_en": "You can pause whenever you need. There is no hurry here."
+        },
+        {
+          "id": "hel_09",
+          "deck_id": "helper",
+          "question_th": "สิ่งที่คุณรู้สึกอยู่ตอนนี้มีเหตุผล คุณไม่ได้อ่อนแอ คุณแค่เป็นมนุษย์",
+          "question_en": "What you're feeling makes sense. You're not weak. You're simply human."
+        },
+        {
+          "id": "hel_10",
+          "deck_id": "helper",
+          "question_th": "หยุดหายใจสักครู่ ไม่มีอะไรที่คุณต้องทำตอนนี้นอกจากหายใจ",
+          "question_en": "Simply breathe for a moment. There is nothing you need to do right now except breathe."
+        }
       ]
     },
     {
@@ -217,16 +958,66 @@
       "name_th": "เช็คเอาท์",
       "name_en": "Check-Out",
       "cards": [
-        { "id": "co_01", "deck_id": "check_out", "question_th": "จากการสำรวจวันนี้ คุณต้องการตั้งความตั้งใจอะไรสำหรับวันหน้า?", "question_en": "From today's exploration, what intention do you want to set for ahead?" },
-        { "id": "co_02", "deck_id": "check_out", "question_th": "มีสิ่งหนึ่งที่คุณจะพกพาออกไปจากการสำรวจครั้งนี้คืออะไร?", "question_en": "What is one thing you will carry with you from this exploration?" },
-        { "id": "co_03", "deck_id": "check_out", "question_th": "ตัวเองในอนาคตต้องการได้ยินอะไรจากตัวเองในวันนี้?", "question_en": "What does your future self need to hear from you today?" },
-        { "id": "co_04", "deck_id": "check_out", "question_th": "คุณจะดูแลตัวเองในวันข้างหน้าอย่างไร?", "question_en": "How will you care for yourself in the days ahead?" },
-        { "id": "co_05", "deck_id": "check_out", "question_th": "มีคนใดที่คุณอยากเชื่อมต่อด้วยหลังจากการสำรวจนี้?", "question_en": "Is there someone you'd like to connect with after this exploration?" },
-        { "id": "co_06", "deck_id": "check_out", "question_th": "ก้าวเล็กๆ อะไรที่คุณสามารถทำได้ในสัปดาห์นี้เพื่อตัวเอง?", "question_en": "What small step can you take this week for yourself?" },
-        { "id": "co_07", "deck_id": "check_out", "question_th": "สิ่งที่คุณค้นพบวันนี้ควรได้รับการดูแลอย่างไร?", "question_en": "How should what you discovered today be cared for?" },
-        { "id": "co_08", "deck_id": "check_out", "question_th": "คุณจะรักตัวเองมากขึ้นได้อย่างไรจากสิ่งที่เรียนรู้วันนี้?", "question_en": "How can you love yourself more from what you learned today?" },
-        { "id": "co_09", "deck_id": "check_out", "question_th": "คุณรู้สึกอย่างไรกับตัวเองตอนนี้เทียบกับตอนเริ่มต้น?", "question_en": "How do you feel about yourself now compared to when you began?" },
-        { "id": "co_10", "deck_id": "check_out", "question_th": "ความตั้งใจที่คุณจะตั้งวันนี้สำหรับตัวคุณเองคืออะไร?", "question_en": "What intention will you set for yourself today?" }
+        {
+          "id": "co_01",
+          "deck_id": "check_out",
+          "question_th": "จากการสำรวจวันนี้ คุณต้องการตั้งความตั้งใจอะไรสำหรับวันหน้า?",
+          "question_en": "From today's exploration, what intention do you want to set for ahead?"
+        },
+        {
+          "id": "co_02",
+          "deck_id": "check_out",
+          "question_th": "มีสิ่งหนึ่งที่คุณจะพกพาออกไปจากการสำรวจครั้งนี้คืออะไร?",
+          "question_en": "What is one thing you will carry with you from this exploration?"
+        },
+        {
+          "id": "co_03",
+          "deck_id": "check_out",
+          "question_th": "ตัวเองในอนาคตต้องการได้ยินอะไรจากตัวเองในวันนี้?",
+          "question_en": "What does your future self need to hear from you today?"
+        },
+        {
+          "id": "co_04",
+          "deck_id": "check_out",
+          "question_th": "คุณจะดูแลตัวเองในวันข้างหน้าอย่างไร?",
+          "question_en": "How will you care for yourself in the days ahead?"
+        },
+        {
+          "id": "co_05",
+          "deck_id": "check_out",
+          "question_th": "มีคนใดที่คุณอยากเชื่อมต่อด้วยหลังจากการสำรวจนี้?",
+          "question_en": "Is there someone you'd like to connect with after this exploration?"
+        },
+        {
+          "id": "co_06",
+          "deck_id": "check_out",
+          "question_th": "ก้าวเล็กๆ อะไรที่คุณสามารถทำได้ในสัปดาห์นี้เพื่อตัวเอง?",
+          "question_en": "What small step can you take this week for yourself?"
+        },
+        {
+          "id": "co_07",
+          "deck_id": "check_out",
+          "question_th": "สิ่งที่คุณค้นพบวันนี้ควรได้รับการดูแลอย่างไร?",
+          "question_en": "How should what you discovered today be cared for?"
+        },
+        {
+          "id": "co_08",
+          "deck_id": "check_out",
+          "question_th": "คุณจะรักตัวเองมากขึ้นได้อย่างไรจากสิ่งที่เรียนรู้วันนี้?",
+          "question_en": "How can you love yourself more from what you learned today?"
+        },
+        {
+          "id": "co_09",
+          "deck_id": "check_out",
+          "question_th": "คุณรู้สึกอย่างไรกับตัวเองตอนนี้เทียบกับตอนเริ่มต้น?",
+          "question_en": "How do you feel about yourself now compared to when you began?"
+        },
+        {
+          "id": "co_10",
+          "deck_id": "check_out",
+          "question_th": "ความตั้งใจที่คุณจะตั้งวันนี้สำหรับตัวคุณเองคืออะไร?",
+          "question_en": "What intention will you set for yourself today?"
+        }
       ]
     },
     {
@@ -234,16 +1025,62 @@
       "name_th": "พลังทรัพยากรภายใน",
       "name_en": "Positive Resources",
       "cards": [
-        { "id": "pr_01", "deck_id": "positive_resources", "question_th": "PLACEHOLDER — มีครั้งไหนที่คุณผ่านอะไรยากๆ มาได้ด้วยตัวเอง? พลังอะไรที่ช่วยคุณตอนนั้น?", "question_en": "PLACEHOLDER — When did you overcome something difficult on your own? What strength helped you?" },
-        { "id": "pr_02", "deck_id": "positive_resources", "question_th": "PLACEHOLDER — คุณเคยดูแลคนอื่นในยามที่เขาต้องการ นั่นบอกอะไรเกี่ยวกับตัวคุณ?", "question_en": "PLACEHOLDER — You have cared for others in their time of need. What does that say about you?" },
-        { "id": "pr_03", "deck_id": "positive_resources", "question_th": "PLACEHOLDER — มีส่วนใดของตัวเองที่คุณรู้สึกว่ายังคงแข็งแกร่ง แม้ในวันที่ยากลำบาก?", "question_en": "PLACEHOLDER — Which part of yourself feels strong, even on difficult days?" },
-        { "id": "pr_04", "deck_id": "positive_resources", "question_th": "PLACEHOLDER — ความสามารถอะไรที่คุณมีซึ่งบางครั้งคุณลืมนึกถึง?", "question_en": "PLACEHOLDER — What ability do you have that you sometimes forget to acknowledge?" },
-        { "id": "pr_05", "deck_id": "positive_resources", "question_th": "PLACEHOLDER — มีคนในชีวิตคุณที่บอกว่าคุณทำสิ่งดีๆ ได้ เขาเห็นอะไรในตัวคุณ?", "question_en": "PLACEHOLDER — Someone in your life has told you that you do good things. What do they see in you?" },
-        { "id": "pr_06", "deck_id": "positive_resources", "question_th": "PLACEHOLDER — คุณเคยเปลี่ยนแปลงตัวเองมาก่อน ทั้งเล็กน้อยหรือใหญ่โต นั่นหมายความว่าอะไร?", "question_en": "PLACEHOLDER — You have changed before, small or large. What does that mean?" },
-        { "id": "pr_07", "deck_id": "positive_resources", "question_th": "PLACEHOLDER — สิ่งที่คุณรักและห่วงใยในชีวิตนี้คืออะไร? มันบอกอะไรเกี่ยวกับคุณ?", "question_en": "PLACEHOLDER — What do you love and care about in this life? What does that reveal about you?" },
-        { "id": "pr_08", "deck_id": "positive_resources", "question_th": "PLACEHOLDER — มีความกล้าหาญเล็กๆ ที่คุณแสดงออกมาในชีวิตประจำวัน คุณสังเกตเห็นมันไหม?", "question_en": "PLACEHOLDER — There is small courage you show every day. Do you notice it?" },
-        { "id": "pr_09", "deck_id": "positive_resources", "question_th": "PLACEHOLDER — ความอยากรู้อยากเห็นที่พาคุณมาถึงตรงนี้วันนี้ — นั่นเองคือทรัพยากรของคุณ", "question_en": "PLACEHOLDER — The curiosity that brought you here today — that itself is your resource." }
-      ]
+        {
+          "id": "pr_01",
+          "deck_id": "positive_resources",
+          "question_th": "ในช่วงเวลานั้น…คุณพาตัวเองผ่านมาได้ด้วยอะไร?",
+          "question_en": "In that moment… what helped you get through it?"
+        },
+        {
+          "id": "pr_02",
+          "deck_id": "positive_resources",
+          "question_th": "อะไรในตัวคุณที่ยังอยู่กับคุณ…แม้จะผ่านเรื่องยาก?",
+          "question_en": "What inside you has stayed with you… even after difficult times?"
+        },
+        {
+          "id": "pr_03",
+          "deck_id": "positive_resources",
+          "question_th": "มีพลังอะไรบางอย่างที่โผล่มาเงียบ ๆ ตอนคุณต้องการ?",
+          "question_en": "Was there a quiet inner strength that emerged when you needed it most?"
+        },
+        {
+          "id": "pr_04",
+          "deck_id": "positive_resources",
+          "question_th": "ถ้ามีบางอย่างในตัวที่คอยประคองใจคุณ…มันคืออะไร?",
+          "question_en": "If there's something within you that held your heart during that time… what was it?"
+        },
+        {
+          "id": "pr_05",
+          "deck_id": "positive_resources",
+          "question_th": "ใครคนหนึ่งในชีวิตคุณเคยเป็นแหล่งพลังให้คุณอย่างไร?",
+          "question_en": "How has someone in your life ever been a source of strength for you?"
+        },
+        {
+          "id": "pr_06",
+          "deck_id": "positive_resources",
+          "question_th": "คุณเคยเห็นตัวเองเข้มแข็ง…ในแบบที่คุณไม่เคยรู้มาก่อนบ้างไหม?",
+          "question_en": "Have you ever seen yourself strong in a way you hadn't known before?"
+        },
+        {
+          "id": "pr_07",
+          "deck_id": "positive_resources",
+          "question_th": "คำพูดไหนของใครบางคนที่คุณเก็บไว้ใช้กับตัวเองในวันที่ใจสั่น?",
+          "question_en": "What words from someone else have you kept close to support yourself when your heart wavered?"
+        },
+        {
+          "id": "pr_08",
+          "deck_id": "positive_resources",
+          "question_th": "ในวันที่คุณยังไม่พร้อมจะก้าวไป… มีส่วนใดในตัวคุณที่ยังอ่อนโยนและไม่เร่งเร้าคุณอยู่บ้าง?",
+          "question_en": "When you weren't ready to move forward… what part of you remained gentle with yourself?"
+        },
+        {
+          "id": "pr_09",
+          "deck_id": "positive_resources",
+          "question_th": "ถ้าคุณจะฝากความหวังไว้กับบางอย่างในตัวเอง…คุณจะฝากไว้กับอะไร?",
+          "question_en": "If you were to entrust your hope to something within you… what would it be?"
+        }
+      ],
+      "source": "original_cards_verbatim"
     }
   ]
 }
