@@ -45,6 +45,7 @@ function initialState(): GameState {
 export default function GameSession() {
   const [state, setState] = useState<GameState>(initialState);
   const [aiReflection, setAiReflection] = useState<string>('');
+  const [hasReflection, setHasReflection] = useState(false);
   const [suggestedLayer, setSuggestedLayer] = useState<IcebergLayer | null>(null);
   const [aiSummary, setAiSummary] = useState<string>('');
   const [loading, setLoading] = useState(false);
@@ -141,11 +142,12 @@ export default function GameSession() {
 
   // ── EXPLORE ──
   function handleLayerSelect(layer: IcebergLayer) {
-    if (layer === state.currentLayer && aiReflection) {
+    if (layer === state.currentLayer && hasReflection) {
       handlePlaceStar();
       return;
     }
     setAiReflection('');
+    setHasReflection(false);
     setSuggestedLayer(null);
     const card = getRandomCardForLayer(layer, Array.from(state.usedCardIds));
     setState((prev) => ({
@@ -177,6 +179,7 @@ export default function GameSession() {
     );
     addEntry({ phase: 'explore', cardId: state.currentCard.id, question: state.currentCard.question_th, playerAnswer: answer, aiReflection: reflection, layer: state.currentLayer });
     setAiReflection(reflection);
+    setHasReflection(true);
     setSuggestedLayer(sl);
     setLoading(false);
   }
@@ -190,6 +193,7 @@ export default function GameSession() {
       currentLayer: null,
     }));
     setAiReflection('');
+    setHasReflection(false);
     setSuggestedLayer(null);
   }
 
@@ -495,6 +499,7 @@ export default function GameSession() {
                 onClick={() => {
                   setState(initialState());
                   setAiReflection('');
+                  setHasReflection(false);
                   setAiSummary('');
                   setCheckOutCard(null);
                   setIntention('');

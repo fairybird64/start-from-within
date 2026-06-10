@@ -41,7 +41,7 @@ export default function IcebergMap({ activeLayer, stars, onLayerSelect, interact
       <div className="flex items-center justify-between w-full mb-1 px-1">
         <div className="text-xs text-stone-400 tracking-wider uppercase">ส่วนที่มองเห็น</div>
         {interactive && (
-          <div className="text-xs text-stone-500 bg-stone-100 rounded-full px-2 py-0.5">
+          <div key={totalStars} className="text-xs text-stone-500 bg-stone-100 rounded-full px-2 py-0.5 animate-[starPop_0.3s_ease-out]">
             ⭐ {totalStars} ดวง
           </div>
         )}

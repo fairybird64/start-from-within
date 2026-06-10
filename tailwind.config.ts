@@ -20,6 +20,10 @@ const config: Config = {
           '0%, 100%': { opacity: '1' },
           '50%': { opacity: '0.7' },
         },
+        'starPop': {
+          '0%': { transform: 'scale(1.4)', opacity: '0.6' },
+          '100%': { transform: 'scale(1)', opacity: '1' },
+        },
       },
       animation: {
         'pulse-subtle': 'pulse-subtle 2.5s ease-in-out infinite',
