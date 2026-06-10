@@ -20,10 +20,11 @@ export type DeckId =
   | 'yearnings'
   | 'self'
   | 'satir_beliefs'
+  | 'positive_resources'
   | 'helper'
   | 'check_out';
 
-export type CopingStance = 'placating' | 'blaming' | 'super_reasonable' | 'irrelevant' | 'congruent';
+export type CopingStance = 'placating' | 'blaming' | 'super_reasonable' | 'irrelevant';
 
 export interface Card {
   id: string;
@@ -52,7 +53,7 @@ export type GamePhase =
   | 'check_in'
   | 'situation'
   | 'explore'
-  | 'reflect'
+  | 'appreciate'
   | 'check_out'
   | 'complete';
 
@@ -66,4 +67,5 @@ export interface GameState {
   usedCardIds: Set<string>;
   supportZoneOpen: boolean;
   supportZoneCard: Card | null;
+  resourceStatement: string;
 }
