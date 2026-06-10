@@ -228,6 +228,22 @@
         { "id": "co_09", "deck_id": "check_out", "question_th": "คุณรู้สึกอย่างไรกับตัวเองตอนนี้เทียบกับตอนเริ่มต้น?", "question_en": "How do you feel about yourself now compared to when you began?" },
         { "id": "co_10", "deck_id": "check_out", "question_th": "ความตั้งใจที่คุณจะตั้งวันนี้สำหรับตัวคุณเองคืออะไร?", "question_en": "What intention will you set for yourself today?" }
       ]
+    },
+    {
+      "id": "positive_resources",
+      "name_th": "พลังทรัพยากรภายใน",
+      "name_en": "Positive Resources",
+      "cards": [
+        { "id": "pr_01", "deck_id": "positive_resources", "question_th": "PLACEHOLDER — มีครั้งไหนที่คุณผ่านอะไรยากๆ มาได้ด้วยตัวเอง? พลังอะไรที่ช่วยคุณตอนนั้น?", "question_en": "PLACEHOLDER — When did you overcome something difficult on your own? What strength helped you?" },
+        { "id": "pr_02", "deck_id": "positive_resources", "question_th": "PLACEHOLDER — คุณเคยดูแลคนอื่นในยามที่เขาต้องการ นั่นบอกอะไรเกี่ยวกับตัวคุณ?", "question_en": "PLACEHOLDER — You have cared for others in their time of need. What does that say about you?" },
+        { "id": "pr_03", "deck_id": "positive_resources", "question_th": "PLACEHOLDER — มีส่วนใดของตัวเองที่คุณรู้สึกว่ายังคงแข็งแกร่ง แม้ในวันที่ยากลำบาก?", "question_en": "PLACEHOLDER — Which part of yourself feels strong, even on difficult days?" },
+        { "id": "pr_04", "deck_id": "positive_resources", "question_th": "PLACEHOLDER — ความสามารถอะไรที่คุณมีซึ่งบางครั้งคุณลืมนึกถึง?", "question_en": "PLACEHOLDER — What ability do you have that you sometimes forget to acknowledge?" },
+        { "id": "pr_05", "deck_id": "positive_resources", "question_th": "PLACEHOLDER — มีคนในชีวิตคุณที่บอกว่าคุณทำสิ่งดีๆ ได้ เขาเห็นอะไรในตัวคุณ?", "question_en": "PLACEHOLDER — Someone in your life has told you that you do good things. What do they see in you?" },
+        { "id": "pr_06", "deck_id": "positive_resources", "question_th": "PLACEHOLDER — คุณเคยเปลี่ยนแปลงตัวเองมาก่อน ทั้งเล็กน้อยหรือใหญ่โต นั่นหมายความว่าอะไร?", "question_en": "PLACEHOLDER — You have changed before, small or large. What does that mean?" },
+        { "id": "pr_07", "deck_id": "positive_resources", "question_th": "PLACEHOLDER — สิ่งที่คุณรักและห่วงใยในชีวิตนี้คืออะไร? มันบอกอะไรเกี่ยวกับคุณ?", "question_en": "PLACEHOLDER — What do you love and care about in this life? What does that reveal about you?" },
+        { "id": "pr_08", "deck_id": "positive_resources", "question_th": "PLACEHOLDER — มีความกล้าหาญเล็กๆ ที่คุณแสดงออกมาในชีวิตประจำวัน คุณสังเกตเห็นมันไหม?", "question_en": "PLACEHOLDER — There is small courage you show every day. Do you notice it?" },
+        { "id": "pr_09", "deck_id": "positive_resources", "question_th": "PLACEHOLDER — ความอยากรู้อยากเห็นที่พาคุณมาถึงตรงนี้วันนี้ — นั่นเองคือทรัพยากรของคุณ", "question_en": "PLACEHOLDER — The curiosity that brought you here today — that itself is your resource." }
+      ]
     }
   ]
 }
