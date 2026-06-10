@@ -73,13 +73,16 @@ What the person wrote: "${playerInput}"`,
   const block = message.content[0];
   if (block.type !== 'text') return { reflection: '', suggestedLayer: null };
 
+  // Strip markdown code fences the model sometimes wraps around JSON
+  const raw = block.text.replace(/^```(?:json)?\s*/i, '').replace(/\s*```$/, '').trim();
+
   try {
-    const parsed = JSON.parse(block.text);
+    const parsed = JSON.parse(raw);
     const layer = VALID_LAYERS.includes(parsed.suggestedLayer) ? parsed.suggestedLayer as IcebergLayer : null;
     return { reflection: parsed.reflection ?? '', suggestedLayer: layer };
   } catch {
-    // Fallback: treat entire response as plain reflection (advice deflection case)
-    return { reflection: block.text, suggestedLayer: null };
+    // Fallback: plain-text response (advice deflection case or malformed JSON)
+    return { reflection: raw, suggestedLayer: null };
   }
 }
 
