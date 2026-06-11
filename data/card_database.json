@@ -8,64 +8,59 @@
         {
           "id": "ci_01",
           "deck_id": "check_in",
-          "question_th": "ตอนนี้ร่างกายของคุณรู้สึกอย่างไร?",
-          "question_en": "How does your body feel right now?"
+          "question_th": "แค่ตอนนี้…การได้นั่งอยู่ตรงนี้ มีความหมายกับคุณยังไงบ้าง?",
+          "question_en": "Right now… what does it mean to you to simply be sitting here?"
         },
         {
           "id": "ci_02",
           "deck_id": "check_in",
-          "question_th": "มีอะไรที่คุณอยากวางไว้ก่อนเข้าสู่การสำรวจนี้?",
-          "question_en": "Is there anything you'd like to set aside before this exploration?"
+          "question_th": "คุณพาตัวเองมาอยู่ตรงนี้ด้วยความรู้สึกแบบไหน?",
+          "question_en": "What feelings did you bring with you to be here today?"
         },
         {
           "id": "ci_03",
           "deck_id": "check_in",
-          "question_th": "ความรู้สึกแรกที่ผุดขึ้นมาตอนนี้คืออะไร?",
-          "question_en": "What is the first feeling that comes up for you right now?"
+          "question_th": "วันนี้คุณอยากให้ที่นี่เป็น “พื้นที่แบบไหน” สำหรับคุณ?",
+          "question_en": "Today, what kind of “space” do you wish this place to be for you?"
         },
         {
           "id": "ci_04",
           "deck_id": "check_in",
-          "question_th": "คุณมาที่นี่ด้วยความตั้งใจอะไร?",
-          "question_en": "What intention brings you here today?"
+          "question_th": "ถ้าตอนนี้ใจของคุณเป็น “สภาพอากาศ” มันเป็นแบบไหนนะ?",
+          "question_en": "If your heart were like the weather right now… what kind of weather would it be?"
         },
         {
           "id": "ci_05",
           "deck_id": "check_in",
-          "question_th": "ถ้าความรู้สึกของคุณตอนนี้เป็นสภาพอากาศ มันจะเป็นอะไร?",
-          "question_en": "If your current feeling were weather, what would it be?"
+          "question_th": "มีอะไรบางอย่างที่คุณอยากวางลง…เพื่อให้การอยู่ตรงนี้เบาขึ้นไหม?",
+          "question_en": "Is there anything you'd like to set down… to help yourself feel lighter being here?"
         },
         {
           "id": "ci_06",
           "deck_id": "check_in",
-          "question_th": "มีอะไรที่คุณต้องการจากการสำรวจครั้งนี้?",
-          "question_en": "What do you need from this exploration?"
+          "question_th": "วันนี้คุณอยากให้เรา ‘รับฟัง’ คุณ…ในแบบไหนมากที่สุด?",
+          "question_en": "Today, in what way would you most like us to “listen” to you?"
         },
         {
           "id": "ci_07",
           "deck_id": "check_in",
-          "question_th": "ระดับพลังงานของคุณตอนนี้อยู่ที่ไหน?",
-          "question_en": "Where is your energy level right now?"
+          "question_th": "ถ้าใจคุณมีเสียงเพลงอยู่ข้างใน…มันกำลังเล่นเพลงแนวไหนนะ?",
+          "question_en": "If there were music playing in your heart… what genre or mood would it be?"
         },
         {
           "id": "ci_08",
           "deck_id": "check_in",
-          "question_th": "คุณรู้สึกอย่างไรกับการนั่งอยู่กับตัวเองในวันนี้?",
-          "question_en": "How do you feel about sitting with yourself today?"
+          "question_th": "ถ้าใจคุณพูดได้…ตอนนี้มันอยากบอกอะไรกับคุณ?",
+          "question_en": "If your heart could speak right now… what would it want to say to you?"
         },
         {
           "id": "ci_09",
           "deck_id": "check_in",
-          "question_th": "มีสิ่งที่ค้างอยู่ในใจที่อยากพูดถึงไหม?",
-          "question_en": "Is there something on your mind that wants to be heard?"
-        },
-        {
-          "id": "ci_10",
-          "deck_id": "check_in",
-          "question_th": "คุณรู้สึกปลอดภัยพอที่จะสำรวจข้างในไหม?",
-          "question_en": "Do you feel safe enough to explore within?"
+          "question_th": "มีอะไรที่คุณอยากให้เรารู้ไว้…เพื่อให้การพูดคุยนี้สบายใจขึ้นสำหรับคุณไหม?",
+          "question_en": "Is there anything you'd like us to know… to help this conversation feel more comfortable for you?"
         }
-      ]
+      ],
+      "source": "original_cards_verbatim"
     },
     {
       "id": "situation",
@@ -892,66 +887,67 @@
       "name_en": "Helper (Rest)",
       "cards": [
         {
-          "id": "hel_01",
+          "id": "hp_01",
           "deck_id": "helper",
-          "question_th": "หายใจเข้าลึกๆ แล้วรู้สึกพื้นใต้เท้าของคุณ คุณอยู่ที่นี่และตอนนี้",
-          "question_en": "Breathe deeply and feel the ground beneath your feet. You are here, right now."
+          "question_th": "ยังไม่ต้องรีบเล่า…อยู่กับความรู้สึกตรงนี้ก็พอ",
+          "question_en": "No need to rush into talking… just stay with your feelings right here."
         },
         {
-          "id": "hel_02",
+          "id": "hp_02",
           "deck_id": "helper",
-          "question_th": "วางมือบนหน้าอกสักครู่ รู้สึกถึงการเต้นของหัวใจ คุณยังคงอยู่",
-          "question_en": "Place your hand on your chest for a moment. Feel your heartbeat. You are still here."
+          "question_th": "ลองหลับตาหรืออยู่นิ่ง ๆ แล้วฟังดูว่า…หัวใจกำลังบอกอะไรอยู่…",
+          "question_en": "Try closing your eyes or sitting quietly… and listen to what your heart is saying."
         },
         {
-          "id": "hel_03",
+          "id": "hp_03",
           "deck_id": "helper",
-          "question_th": "มองรอบๆ แล้วตั้งชื่อ 5 สิ่งที่คุณเห็น จิตใจของคุณกลับสู่ปัจจุบัน",
-          "question_en": "Look around and name 5 things you see. Your mind is returning to the present."
+          "question_th": "ลองเงียบอยู่ตรงนี้สักครู่…โดยไม่ต้องทำอะไรเลย",
+          "question_en": "Let yourself be silent here for a moment… without doing anything."
         },
         {
-          "id": "hel_04",
+          "id": "hp_04",
           "deck_id": "helper",
-          "question_th": "การมาถึงนี่ต้องการความกล้าหาญ ขอบคุณตัวเองสักนิดสำหรับการอยู่ที่นี่",
-          "question_en": "Coming here takes courage. Thank yourself a little for showing up."
+          "question_th": "วันนี้อาจยังไม่พร้อมเล่า…แต่ก็ยังอยู่ตรงนี้ได้",
+          "question_en": "Maybe you're not ready to share today… but it's okay to just be here."
         },
         {
-          "id": "hel_05",
+          "id": "hp_05",
           "deck_id": "helper",
-          "question_th": "คุณไม่จำเป็นต้องรู้ทุกอย่างตอนนี้ บางครั้งการแค่อยู่กับคำถามก็เพียงพอ",
-          "question_en": "You don't need to know everything right now. Sometimes just being with the question is enough."
+          "question_th": "หายใจช้า ๆ แล้วกลับมาฟังเสียงข้างใน",
+          "question_en": "Take a slow breath… and return to the sound within."
         },
         {
-          "id": "hel_06",
+          "id": "hp_06",
           "deck_id": "helper",
-          "question_th": "ดื่มน้ำสักซิป ร่างกายของคุณมีความปรารถนาดีต่อคุณเสมอ",
-          "question_en": "Take a sip of water. Your body is always on your side."
+          "question_th": "ไม่ต้องรู้คำตอบตอนนี้ก็ได้…บางอย่างใช้แค่ใจรับฟัง",
+          "question_en": "You don't need to know the answer right now… some things only need the heart to listen."
         },
         {
-          "id": "hel_07",
+          "id": "hp_07",
           "deck_id": "helper",
-          "question_th": "ยืดแขนหรือขยับตัวสักนิด ร่างกายเป็นบ้านของคุณ",
-          "question_en": "Stretch your arms or move a little. Your body is your home."
+          "question_th": "ถ้าความคิดยังสับสน…ลองสังเกตแค่สิ่งที่รู้สึกอยู่ในร่างกายดูก่อน…",
+          "question_en": "If your thoughts are still tangled… just notice what you're feeling in your body for now."
         },
         {
-          "id": "hel_08",
+          "id": "hp_08",
           "deck_id": "helper",
-          "question_th": "คุณสามารถหยุดพักได้เมื่อใดก็ตามที่ต้องการ ไม่มีการรีบร้อนที่นี่",
-          "question_en": "You can pause whenever you need. There is no hurry here."
+          "question_th": "ความเงียบของคุณ…ก็มีเสียงของมันเอง",
+          "question_en": "Your silence… has a voice of its own."
         },
         {
-          "id": "hel_09",
+          "id": "hp_09",
           "deck_id": "helper",
-          "question_th": "สิ่งที่คุณรู้สึกอยู่ตอนนี้มีเหตุผล คุณไม่ได้อ่อนแอ คุณแค่เป็นมนุษย์",
-          "question_en": "What you're feeling makes sense. You're not weak. You're simply human."
+          "question_th": "หากคำตอบยังไม่มา…แค่พยักหน้าเบา ๆ ให้ใจเรารับรู้",
+          "question_en": "If there's no answer yet… just nod gently and let your heart feel acknowledged."
         },
         {
-          "id": "hel_10",
+          "id": "hp_10",
           "deck_id": "helper",
-          "question_th": "หยุดหายใจสักครู่ ไม่มีอะไรที่คุณต้องทำตอนนี้นอกจากหายใจ",
-          "question_en": "Simply breathe for a moment. There is nothing you need to do right now except breathe."
+          "question_th": "ไม่ต้องรีบข้ามไปไหน…อยู่ตรงนี้กับใจ…ก็ถือว่าไปต่อแล้ว",
+          "question_en": "No need to rush ahead… staying here with your heart is already a step forward."
         }
-      ]
+      ],
+      "source": "original_cards_verbatim"
     },
     {
       "id": "check_out",
@@ -961,64 +957,59 @@
         {
           "id": "co_01",
           "deck_id": "check_out",
-          "question_th": "จากการสำรวจวันนี้ คุณต้องการตั้งความตั้งใจอะไรสำหรับวันหน้า?",
-          "question_en": "From today's exploration, what intention do you want to set for ahead?"
+          "question_th": "วันนี้คุณได้เรียนรู้อะไรเกี่ยวกับตัวเอง?",
+          "question_en": "What have you learned about yourself today?"
         },
         {
           "id": "co_02",
           "deck_id": "check_out",
-          "question_th": "มีสิ่งหนึ่งที่คุณจะพกพาออกไปจากการสำรวจครั้งนี้คืออะไร?",
-          "question_en": "What is one thing you will carry with you from this exploration?"
+          "question_th": "มีอะไรบางอย่างที่ชัดเจนขึ้นในใจ หลังการพูดคุยหรือการได้ฟังตัวเอง?",
+          "question_en": "Is there something that has become clearer in your heart after this conversation or after listening to yourself?"
         },
         {
           "id": "co_03",
           "deck_id": "check_out",
-          "question_th": "ตัวเองในอนาคตต้องการได้ยินอะไรจากตัวเองในวันนี้?",
-          "question_en": "What does your future self need to hear from you today?"
+          "question_th": "คุณค้นพบสิ่งใดที่ไม่เคยสังเกตมาก่อน?",
+          "question_en": "Did you discover something you had never noticed before?"
         },
         {
           "id": "co_04",
           "deck_id": "check_out",
-          "question_th": "คุณจะดูแลตัวเองในวันข้างหน้าอย่างไร?",
-          "question_en": "How will you care for yourself in the days ahead?"
+          "question_th": "ถ้าเลือกได้หนึ่งสิ่งที่จะเก็บไว้จากวันนี้…คุณอยากเก็บอะไร?",
+          "question_en": "If you could keep one thing from today… what would you choose to keep?"
         },
         {
           "id": "co_05",
           "deck_id": "check_out",
-          "question_th": "มีคนใดที่คุณอยากเชื่อมต่อด้วยหลังจากการสำรวจนี้?",
-          "question_en": "Is there someone you'd like to connect with after this exploration?"
+          "question_th": "มีคำพูด ประโยค หรือความรู้สึกไหนที่คุณอยากพกกลับไป?",
+          "question_en": "Is there a phrase, sentence, or feeling you'd like to carry with you?"
         },
         {
           "id": "co_06",
           "deck_id": "check_out",
-          "question_th": "ก้าวเล็กๆ อะไรที่คุณสามารถทำได้ในสัปดาห์นี้เพื่อตัวเอง?",
-          "question_en": "What small step can you take this week for yourself?"
+          "question_th": "ความรู้สึกสุดท้ายที่อยากฝากไว้กับตัวเองในวันนี้คืออะไร?",
+          "question_en": "What is the final feeling you'd like to leave with yourself today?"
         },
         {
           "id": "co_07",
           "deck_id": "check_out",
-          "question_th": "สิ่งที่คุณค้นพบวันนี้ควรได้รับการดูแลอย่างไร?",
-          "question_en": "How should what you discovered today be cared for?"
+          "question_th": "ถ้าใจของคุณจะก้าวต่อไปจากตรงนี้…คุณอยากให้มันก้าวไปแบบไหน?",
+          "question_en": "If your heart were to move forward from here… how would you want it to go on?"
         },
         {
           "id": "co_08",
           "deck_id": "check_out",
-          "question_th": "คุณจะรักตัวเองมากขึ้นได้อย่างไรจากสิ่งที่เรียนรู้วันนี้?",
-          "question_en": "How can you love yourself more from what you learned today?"
+          "question_th": "คุณอยากขอบคุณอะไรในตัวเอง…ที่พามาถึงตรงนี้?",
+          "question_en": "What would you like to thank yourself for… that brought you to this point?"
         },
         {
           "id": "co_09",
           "deck_id": "check_out",
-          "question_th": "คุณรู้สึกอย่างไรกับตัวเองตอนนี้เทียบกับตอนเริ่มต้น?",
-          "question_en": "How do you feel about yourself now compared to when you began?"
-        },
-        {
-          "id": "co_10",
-          "deck_id": "check_out",
-          "question_th": "ความตั้งใจที่คุณจะตั้งวันนี้สำหรับตัวคุณเองคืออะไร?",
-          "question_en": "What intention will you set for yourself today?"
+          "question_th": "ถ้าให้พูดกับตัวเองในวันนี้ได้หนึ่งประโยค…คุณอยากพูดว่าอะไร?",
+          "question_en": "If you could say one sentence to yourself today… what would it be?"
         }
-      ]
+      ],
+      "source": "original_cards_verbatim"
     },
     {
       "id": "positive_resources",
