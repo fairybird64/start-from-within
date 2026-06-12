@@ -1,3 +1,5 @@
+// CLINICAL CONTENT POLICY: card_database.json must contain ONLY the 129 verbatim original cards (13 decks).
+// NEVER add AI-generated card content. Any new deck or card requires explicit approval from the clinical lead (Fairy) before merge.
 import cardDatabase from '@/data/card_database.json';
 import type { Card, DeckId, IcebergLayer } from './types';
 
@@ -21,16 +23,18 @@ export function getRandomCard(deckId: DeckId, excludeIds: string[] = []): Card |
   return all[Math.floor(Math.random() * all.length)];
 }
 
+// Layers without a card deck (coping, self) return null — callers must handle no-card path.
+const layerToDeck: Partial<Record<IcebergLayer, DeckId>> = {
+  behavior: 'behavior',
+  feelings: 'feelings',
+  feelings_about_feelings: 'feelings_about_feelings',
+  perceptions: 'perceptions',
+  expectations: 'expectations',
+  yearnings: 'yearnings',
+};
+
 export function getRandomCardForLayer(layer: IcebergLayer, excludeIds: string[] = []): Card | null {
-  const layerToDeck: Record<IcebergLayer, DeckId> = {
-    behavior: 'behavior',
-    coping: 'coping',
-    feelings: 'feelings',
-    feelings_about_feelings: 'feelings_about_feelings',
-    perceptions: 'perceptions',
-    expectations: 'expectations',
-    yearnings: 'yearnings',
-    self: 'self',
-  };
-  return getRandomCard(layerToDeck[layer], excludeIds);
+  const deckId = layerToDeck[layer];
+  if (!deckId) return null;
+  return getRandomCard(deckId, excludeIds);
 }

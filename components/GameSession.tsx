@@ -149,6 +149,7 @@ export default function GameSession() {
     setAiReflection('');
     setHasReflection(false);
     setSuggestedLayer(null);
+    // coping and self have no card deck — set currentCard to null (no-card path)
     const card = getRandomCardForLayer(layer, Array.from(state.usedCardIds));
     setState((prev) => ({
       ...prev,
@@ -169,15 +170,22 @@ export default function GameSession() {
   }
 
   async function handleExploreSubmit(answer: string) {
-    if (!state.currentCard || !state.currentLayer) return;
+    if (!state.currentLayer) return;
     setLoading(true);
     const { reflection, suggestedLayer: sl } = await getReflection(
       answer,
-      state.currentCard.question_th,
+      state.currentCard?.question_th ?? '',
       state.currentLayer,
       state.copingStance,
     );
-    addEntry({ phase: 'explore', cardId: state.currentCard.id, question: state.currentCard.question_th, playerAnswer: answer, aiReflection: reflection, layer: state.currentLayer });
+    addEntry({
+      phase: 'explore',
+      cardId: state.currentCard?.id ?? '',
+      question: state.currentCard?.question_th ?? '',
+      playerAnswer: answer,
+      aiReflection: reflection,
+      layer: state.currentLayer,
+    });
     setAiReflection(reflection);
     setHasReflection(true);
     setSuggestedLayer(sl);
@@ -336,10 +344,10 @@ export default function GameSession() {
           <PhaseCard title="สำรวจภูเขาน้ำแข็งของคุณ" subtitle="เลือกชั้นที่อยากสำรวจ — การ์ดจะช่วยพาคุณลงลึก เริ่มจากชั้นไหนก็ได้ ไม่มีผิดถูก">
             <IcebergMap activeLayer={state.currentLayer} stars={state.stars} onLayerSelect={handleLayerSelect} interactive />
 
-            {state.currentCard && state.currentLayer && (
+            {state.currentLayer && (
               <div className="flex flex-col gap-4 mt-2">
                 <div className="text-xs text-center text-stone-400 uppercase tracking-wider">{LAYER_LABELS[state.currentLayer]}</div>
-                <CardDisplay card={state.currentCard} onNewCard={handleNewCardInLayer} />
+                {state.currentCard && <CardDisplay card={state.currentCard} onNewCard={handleNewCardInLayer} />}
                 {!aiReflection && <PlayerInput onSubmit={handleExploreSubmit} loading={loading} />}
                 {aiReflection && (
                   <div className="flex flex-col gap-3">
