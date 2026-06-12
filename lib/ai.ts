@@ -36,7 +36,7 @@ export async function reflectPlayerInput(
 
   const message = await client.messages.create({
     model: 'claude-opus-4-8',
-    max_tokens: 300,
+    max_tokens: 1024,
     messages: [
       {
         role: 'user',
@@ -70,6 +70,11 @@ What the person wrote: "${playerInput}"`,
     ],
   });
 
+  if (message.stop_reason === 'max_tokens') {
+    console.warn('[reflect] Response truncated (stop_reason=max_tokens). Consider raising max_tokens.');
+    return { reflection: '', suggestedLayer: null };
+  }
+
   const block = message.content[0];
   if (block.type !== 'text') return { reflection: '', suggestedLayer: null };
 
@@ -89,7 +94,7 @@ What the person wrote: "${playerInput}"`,
 export async function reflectSessionLayers(sessionContent: string): Promise<string> {
   const message = await client.messages.create({
     model: 'claude-opus-4-8',
-    max_tokens: 250,
+    max_tokens: 1024,
     messages: [
       {
         role: 'user',
@@ -101,6 +106,10 @@ ${sessionContent}`,
     ],
   });
 
+  if (message.stop_reason === 'max_tokens') {
+    console.warn('[reflect-layers] Response truncated (stop_reason=max_tokens).');
+    return '';
+  }
   const block = message.content[0];
   return block.type === 'text' ? block.text : '';
 }
@@ -112,7 +121,7 @@ export async function summarizeSession(entries: Array<{ question: string; answer
 
   const message = await client.messages.create({
     model: 'claude-opus-4-8',
-    max_tokens: 400,
+    max_tokens: 2048,
     messages: [
       {
         role: 'user',
@@ -133,6 +142,10 @@ ${entriesText}`,
     ],
   });
 
+  if (message.stop_reason === 'max_tokens') {
+    console.warn('[summarize] Response truncated (stop_reason=max_tokens).');
+    return '';
+  }
   const block = message.content[0];
   return block.type === 'text' ? block.text : '';
 }
