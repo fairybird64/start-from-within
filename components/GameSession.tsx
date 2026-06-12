@@ -344,7 +344,16 @@ export default function GameSession() {
                 {aiReflection && (
                   <div className="flex flex-col gap-3">
                     <ReflectionBubble text={aiReflection} />
-                    {suggestedLayer && (
+                    {/* CLINICAL WORDING — approved by Fairy, do not modify */}
+                    {state.currentLayer === 'self' && (
+                      <button
+                        onClick={goToAppreciate}
+                        className="self-center px-4 py-2 rounded-full bg-amber-50 hover:bg-amber-100 text-amber-800 text-sm border border-amber-200 transition-colors text-center leading-snug"
+                      >
+                        → เมื่อคุณพร้อม เราไปเก็บสิ่งดี ๆ ที่คุณค้นพบ กลับไปดูแลใจตัวเองกันนะคะ
+                      </button>
+                    )}
+                    {state.currentLayer !== 'self' && suggestedLayer && (
                       <button
                         onClick={() => handleLayerSelect(suggestedLayer)}
                         className="self-center px-4 py-1.5 rounded-full bg-indigo-50 hover:bg-indigo-100 text-indigo-700 text-sm border border-indigo-200 transition-colors"
