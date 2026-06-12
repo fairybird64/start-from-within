@@ -22,7 +22,8 @@ export type DeckId =
   | 'satir_beliefs'
   | 'positive_resources'
   | 'helper'
-  | 'check_out';
+  | 'check_out'
+  | 'body_sensations';
 
 export type CopingStance = 'placating' | 'blaming' | 'super_reasonable' | 'irrelevant';
 
