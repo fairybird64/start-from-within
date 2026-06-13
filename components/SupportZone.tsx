@@ -4,7 +4,6 @@ import type { Card } from '@/lib/types';
 import CardDisplay from './CardDisplay';
 
 interface Props {
-  onBelief: () => void;
   onRest: () => void;
   onStop: () => void;
   supportCard: Card | null;
@@ -13,7 +12,6 @@ interface Props {
 }
 
 export default function SupportZone({
-  onBelief,
   onRest,
   onStop,
   supportCard,
@@ -23,12 +21,6 @@ export default function SupportZone({
   return (
     <div className="flex flex-col gap-3">
       <div className="flex gap-2 justify-center flex-wrap">
-        <button
-          onClick={onBelief}
-          className="px-3 py-1.5 rounded-full bg-amber-50 hover:bg-amber-100 text-amber-700 text-xs transition-colors border border-amber-200"
-        >
-          ✨ ขอเพิ่ม
-        </button>
         <button
           onClick={onRest}
           className="px-3 py-1.5 rounded-full bg-blue-50 hover:bg-blue-100 text-blue-600 text-xs transition-colors border border-blue-200"

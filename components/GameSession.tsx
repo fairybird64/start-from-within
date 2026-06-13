@@ -206,11 +206,6 @@ export default function GameSession() {
   }
 
   // ── SUPPORT ZONE ──
-  function handleBelief() {
-    const card = getRandomCard('satir_beliefs', Array.from(state.usedCardIds));
-    setState((prev) => ({ ...prev, supportZoneCard: card, supportZoneOpen: true }));
-  }
-
   function handleRest() {
     const card = getRandomCard('helper');
     setState((prev) => ({ ...prev, supportZoneCard: card, supportZoneOpen: true }));
@@ -380,7 +375,6 @@ export default function GameSession() {
 
             <div className="mt-6 pt-4 border-t border-stone-100">
               <SupportZone
-                onBelief={handleBelief}
                 onRest={handleRest}
                 onStop={handleStop}
                 supportCard={state.supportZoneCard}
